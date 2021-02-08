@@ -2,6 +2,7 @@
 @prefix pav: <http://purl.org/pav/> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
+@prefix zonmw: <http://vocab.fairdatacollective.org/zonmw/project-content/> .
 
 <http://vocab.fairdatacollective.org/zonmw/project-content/> a skos:ConceptScheme;
   dct:contributor <https://orcid.org/0000-0002-9381-9693>;
@@ -11,4 +12,11 @@
   pav:createdOn "2021-02-08T15:00:00+00:00"@en;
   pav:lastUpdatedOn "2021-02-08T15:00:00+00:00"@en;
   pav:version "0.1.0"@en;
+  skos:hasTopConcept zonmw:Deprecated;
   skos:prefLabel "ZonMW Project Content Vocabulary"@en .
+
+zonmw:Deprecated a skos:Concept;
+  skos:definition "This is a set of controlled terms which are deprecated."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "Deprecated"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
