@@ -9,6 +9,8 @@ dct:title,ZonMW Project Content Vocabulary
 dct:description,Controlled vocabulary of terms used in ZonMV COVID project content metadata template
 dct:creator,https://orcid.org/0000-0003-2195-3997
 dct:contributor,https://orcid.org/0000-0002-9381-9693 
+dct:contributor,https://orcid.org/0000-0002-7160-5942
+dct:rights,https://spdx.org/licenses/CC0-1.0 
 pav:version,0.1.0
 pav:createdOn,2021-02-08T15:00:00+00:00
 pav:lastUpdatedOn,2021-02-08T15:00:00+00:00

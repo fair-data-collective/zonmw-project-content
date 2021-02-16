@@ -5,9 +5,10 @@
 @prefix zonmw: <http://vocab.fairdatacollective.org/zonmw/project-content/> .
 
 <http://vocab.fairdatacollective.org/zonmw/project-content/> a skos:ConceptScheme;
-  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:contributor <https://orcid.org/0000-0002-7160-5942>, <https://orcid.org/0000-0002-9381-9693>;
   dct:creator <https://orcid.org/0000-0003-2195-3997>;
   dct:description "Controlled vocabulary of terms used in ZonMV COVID project content metadata template"@en;
+  dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "ZonMW Project Content Vocabulary"@en;
   pav:createdOn "2021-02-08T15:00:00+00:00"@en;
   pav:lastUpdatedOn "2021-02-08T15:00:00+00:00"@en;
