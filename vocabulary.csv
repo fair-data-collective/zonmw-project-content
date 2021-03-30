@@ -21,5 +21,5 @@ pav:lastUpdatedOn,2021-02-08T15:00:00+00:00
 
 
 
-Identifier,skos:prefLabel@en,"skos:altLabel(separator="","")",skos:definition@en,"skos:broader(separator="","")","skos:closeMatch(separator="","")","skos:exactMatch(separator="","")","skos:broadMatch(separator="","")","skos:narrowMatch(separator="","")","skos:relatedMatch(separator="","")",owl:deprecated^^xsd:boolean,dct:isReplacedBy,skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"
-zonmw:Deprecated,Deprecated,,This is a set of controlled terms which are deprecated.,,, 
+Identifier,skos:prefLabel@en,"skos:altLabel(separator="","")",skos:definition@en,"dct:source(separator="","")","skos:broader(separator="","")","skos:closeMatch(separator="","")","skos:exactMatch(separator="","")","skos:relatedMatch(separator="","")",owl:deprecated^^xsd:boolean,dct:isReplacedBy,skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"
+zonmw:Deprecated,Deprecated,,This is a set of controlled terms which are deprecated.,,,, 
