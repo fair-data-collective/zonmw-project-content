@@ -25,8 +25,8 @@
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "ZonMW Project Content Vocabulary"@en;
   pav:createdOn "2021-02-08T15:00:00+00:00"@en;
-  pav:lastUpdatedOn "2021-02-08T15:00:00+00:00"@en;
-  pav:version "0.1.0"@en;
+  pav:lastUpdatedOn "2021-04-06T22:00:00+00:00"@en;
+  pav:version "0.2.0"@en;
   skos:hasTopConcept zonmwpc:10000, zonmwpc:10001, zonmwpc:10017, zonmwpc:10037, zonmwpc:10107,
     zonmwpc:10144, zonmwpc:10186;
   skos:prefLabel "ZonMW Project Content Vocabulary"@en .
@@ -714,7 +714,7 @@ zonmwpc:10118 a skos:Concept;
   skos:exactMatch <http://purl.bioontology.org/ontology/HL7/C001192>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10119, zonmwpc:10120, zonmwpc:10121, zonmwpc:10122, zonmwpc:10123,
-    zonmwpc:10125, zonmwpc:10126, zonmwpc:10129, zonmwpc:10130, zonmwpc:10131;
+    zonmwpc:10125, zonmwpc:10126;
   skos:prefLabel "diagnostic imaging"@en .
 
 zonmwpc:10119 a skos:Concept;
@@ -786,24 +786,25 @@ zonmwpc:10127 a skos:Concept;
 zonmwpc:10128 a skos:Concept;
   skos:broader zonmwpc:10107;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10129, zonmwpc:10130, zonmwpc:10131;
   skos:prefLabel "geographical data"@en .
 
 zonmwpc:10129 a skos:Concept;
-  skos:broader zonmwpc:10118;
+  skos:broader zonmwpc:10128;
   skos:exactMatch <http://purl.jp/bio/4/id/200906051703202632>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "aerial photography"@en .
 
 zonmwpc:10130 a skos:Concept;
   dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C43433&key=n1963439227&b=1&n=null>;
-  skos:broader zonmwpc:10118;
+  skos:broader zonmwpc:10128;
   skos:definition "A usually 2-dimensional diagrammatic representation of an object or area."@en;
   skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C43433>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "map"@en .
 
 zonmwpc:10131 a skos:Concept;
-  skos:broader zonmwpc:10118;
+  skos:broader zonmwpc:10128;
   skos:definition "Data produced by a system designed to capture, store, update, manipulate, analyze and display data that are linked to location."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "GIS data"@en;

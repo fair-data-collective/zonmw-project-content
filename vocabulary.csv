@@ -11,9 +11,9 @@ dct:creator,https://orcid.org/0000-0003-2195-3997
 dct:contributor,https://orcid.org/0000-0002-9381-9693 
 dct:contributor,https://orcid.org/0000-0002-7160-5942
 dct:rights,https://spdx.org/licenses/CC0-1.0 
-pav:version,0.1.0
+pav:version,0.2.0
 pav:createdOn,2021-02-08T15:00:00+00:00
-pav:lastUpdatedOn,2021-02-08T15:00:00+00:00
+pav:lastUpdatedOn,2021-04-06T22:00:00+00:00
 
 
 
@@ -159,9 +159,9 @@ zonmwpc:10125,survey data,,A data set that contains the outcome of a survey.,,zo
 zonmwpc:10126,COVID policy and prevention measures,,,,zonmwpc:10118,https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C15843
 zonmwpc:10127,environmental data,,,,zonmwpc:10107
 zonmwpc:10128,geographical data,,,,zonmwpc:10107
-zonmwpc:10129,aerial photography,,,,zonmwpc:10118,,http://purl.jp/bio/4/id/200906051703202632
-zonmwpc:10130,map,,A usually 2-dimensional diagrammatic representation of an object or area.,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C43433&key=n1963439227&b=1&n=null,zonmwpc:10118,,https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C43433
-zonmwpc:10131,GIS data,,"Data produced by a system designed to capture, store, update, manipulate, analyze and display data that are linked to location.",,zonmwpc:10118,,,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C15754&key=n1963476518&b=1&n=null
+zonmwpc:10129,aerial photography,,,,zonmwpc:10128,,http://purl.jp/bio/4/id/200906051703202632
+zonmwpc:10130,map,,A usually 2-dimensional diagrammatic representation of an object or area.,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C43433&key=n1963439227&b=1&n=null,zonmwpc:10128,,https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C43433
+zonmwpc:10131,GIS data,,"Data produced by a system designed to capture, store, update, manipulate, analyze and display data that are linked to location.",,zonmwpc:10128,,,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C15754&key=n1963476518&b=1&n=null
 zonmwpc:10132,audiovisual data,,Group of subclasses of audiovisual media that are not imaging technology,,zonmwpc:10107
 zonmwpc:10133,picture,,"A visual representation of an object, scene, person or abstraction.",https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C54273&key=1753678631&b=1&n=null,zonmwpc:10132,,https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C54273&jump_to_nav=true
 zonmwpc:10134,video recording,,The storing or preserving of video images to be displayed later.,:https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C91063,zonmwpc:10132,,https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C96985&jump_to_nav=true
