@@ -1,8 +1,22 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix dcat: <http://www.w3.org/ns/dcat#> .
 @prefix dct: <http://purl.org/dc/terms/> .
+@prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix org: <http://www.w3.org/ns/org#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pav: <http://purl.org/pav/> .
+@prefix prov: <http://www.w3.org/ns/prov#> .
+@prefix qb: <http://purl.org/linked-data/cube#> .
 @prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema: <http://schema.org/> .
+@prefix sh: <http://www.w3.org/ns/shacl#> .
 @prefix skos: <http://www.w3.org/2004/02/skos/core#> .
-@prefix zonmw: <http://vocab.fairdatacollective.org/zonmw/project-content/> .
+@prefix skosthes: <http://purl.org/iso25964/skos-thes#> .
+@prefix skosxl: <http://www.w3.org/2008/05/skos-xl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix zonmwpc: <http://vocab.fairdatacollective.org/zonmw/project-content/> .
 
 <http://vocab.fairdatacollective.org/zonmw/project-content/> a skos:ConceptScheme;
   dct:contributor <https://orcid.org/0000-0002-7160-5942>, <https://orcid.org/0000-0002-9381-9693>;
@@ -13,11 +27,1369 @@
   pav:createdOn "2021-02-08T15:00:00+00:00"@en;
   pav:lastUpdatedOn "2021-02-08T15:00:00+00:00"@en;
   pav:version "0.1.0"@en;
-  skos:hasTopConcept zonmw:Deprecated;
+  skos:hasTopConcept zonmwpc:10000, zonmwpc:10001, zonmwpc:10017, zonmwpc:10037, zonmwpc:10107,
+    zonmwpc:10144, zonmwpc:10186;
   skos:prefLabel "ZonMW Project Content Vocabulary"@en .
 
-zonmw:Deprecated a skos:Concept;
+zonmwpc:10000 a skos:Concept;
   skos:definition "This is a set of controlled terms which are deprecated."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "Deprecated"@en;
+  skos:prefLabel "deprecated"@en;
   skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
+
+zonmwpc:10001 a skos:Concept;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10002, zonmwpc:10009;
+  skos:prefLabel "spatial scope"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
+
+zonmwpc:10002 a skos:Concept;
+  skos:broader zonmwpc:10001;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10003, zonmwpc:10004, zonmwpc:10005, zonmwpc:10006, zonmwpc:10007,
+    zonmwpc:10008;
+  skos:prefLabel "area"@en .
+
+zonmwpc:10003 a skos:Concept;
+  skos:broader zonmwpc:10002;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "urban"@en .
+
+zonmwpc:10004 a skos:Concept;
+  skos:broader zonmwpc:10002;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "rural"@en .
+
+zonmwpc:10005 a skos:Concept;
+  skos:broader zonmwpc:10002;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "provincial"@en .
+
+zonmwpc:10006 a skos:Concept;
+  skos:broader zonmwpc:10002;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "regional"@en .
+
+zonmwpc:10007 a skos:Concept;
+  skos:broader zonmwpc:10002;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "national"@en .
+
+zonmwpc:10008 a skos:Concept;
+  skos:broader zonmwpc:10002;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "international"@en .
+
+zonmwpc:10009 a skos:Concept;
+  skos:broader zonmwpc:10001;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10010, zonmwpc:10011, zonmwpc:10012, zonmwpc:10013, zonmwpc:10014,
+    zonmwpc:10015, zonmwpc:10016;
+  skos:prefLabel "care setting"@en .
+
+zonmwpc:10010 a skos:Concept;
+  skos:broader zonmwpc:10009;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "home care"@en .
+
+zonmwpc:10011 a skos:Concept;
+  skos:broader zonmwpc:10009;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "transmural"@en .
+
+zonmwpc:10012 a skos:Concept;
+  skos:broader zonmwpc:10009;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "GP care"@en .
+
+zonmwpc:10013 a skos:Concept;
+  skos:broader zonmwpc:10009;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "nursing home care"@en .
+
+zonmwpc:10014 a skos:Concept;
+  skos:broader zonmwpc:10009;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "hospital care"@en .
+
+zonmwpc:10015 a skos:Concept;
+  skos:broader zonmwpc:10009;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "informal care"@en .
+
+zonmwpc:10016 a skos:Concept;
+  skos:broader zonmwpc:10009;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "residential care"@en .
+
+zonmwpc:10017 a skos:Concept;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10018, zonmwpc:10023, zonmwpc:10027, zonmwpc:10033;
+  skos:prefLabel "temporal scope"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
+
+zonmwpc:10018 a skos:Concept;
+  skos:broader zonmwpc:10017;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10019, zonmwpc:10020, zonmwpc:10021, zonmwpc:10022;
+  skos:prefLabel "health care phase"@en .
+
+zonmwpc:10019 a skos:Concept;
+  skos:broader zonmwpc:10018;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "acute care"@en .
+
+zonmwpc:10020 a skos:Concept;
+  skos:broader zonmwpc:10018;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "post-covid care"@en .
+
+zonmwpc:10021 a skos:Concept;
+  dct:source <https://bioportal.bioontology.org/ontologies/MEDLINEPLUS?p=classes&conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FMEDLINEPLUS%2FC0030231>;
+  skos:broader zonmwpc:10018;
+  skos:definition "Palliative care is treatment of the discomfort, symptoms, and stress of serious illness. It provides relief from distressing symptoms including pain, shortness of breath, constipation, nausea, loss of appetite, problems with sleep. It can also help you deal with the side effects of the medical treatments you're receiving, care at the end of life, always includes palliative care. But you may receive palliative care at any stage of an illness. The goal is to make you comfortable and improve your quality of life."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C101516>, <https://bioportal.bioontology.org/ontologies/MEDLINEPLUS?p=classes&conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FMEDLINEPLUS%2FC0030231>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "palliative care"@en .
+
+zonmwpc:10022 a skos:Concept;
+  dct:source <https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.02d&ns=ncit&code=C15315&key=1767529850&b=1&n=null>;
+  skos:broader zonmwpc:10018;
+  skos:definition "Restoration of the ability to function in a normal or near normal manner following disease, illness, or injury."@en;
+  skos:exactMatch <https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.02d&ns=ncit&code=C15315&key=1767529850&b=1&n=null>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "rehabilitation"@en .
+
+zonmwpc:10023 a skos:Concept;
+  skos:broader zonmwpc:10017;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10024, zonmwpc:10025, zonmwpc:10026;
+  skos:prefLabel "surveillance phase"@en .
+
+zonmwpc:10024 a skos:Concept;
+  skos:broader zonmwpc:10023;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "short-term impact on emotional wellbeing"@en .
+
+zonmwpc:10025 a skos:Concept;
+  skos:broader zonmwpc:10023;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "long-term impact on emotional wellbeing"@en .
+
+zonmwpc:10026 a skos:Concept;
+  dct:source <http://purl.obolibrary.org/obo/DOID_0080848>;
+  skos:broader zonmwpc:10023;
+  skos:definition "A Coronavirus infectious disease that is characterized by long-term persistent and fluctuating symptoms, in individuals with COVID-19, persisting beyond three to four weeks, including the loss of the ability to smell and taste, breathlessness, fatigue, difficulty in breathing, difficulty concentrating, memory loss, confusion, headache, heart palpitations, chest pain, pain with deep breaths, dizziness, and tachycardia."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/DOID_0080848>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "long COVID"@en .
+
+zonmwpc:10027 a skos:Concept;
+  skos:broader zonmwpc:10017;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10028, zonmwpc:10029, zonmwpc:10030, zonmwpc:10031, zonmwpc:10032;
+  skos:prefLabel "regulation phase"@en .
+
+zonmwpc:10028 a skos:Concept;
+  skos:broader zonmwpc:10027;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "lockdown phase"@en .
+
+zonmwpc:10029 a skos:Concept;
+  skos:broader zonmwpc:10027;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "prevention phase"@en .
+
+zonmwpc:10030 a skos:Concept;
+  skos:broader zonmwpc:10027;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "social distancing phase"@en .
+
+zonmwpc:10031 a skos:Concept;
+  skos:broader zonmwpc:10027;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "restricted shopping phase"@en .
+
+zonmwpc:10032 a skos:Concept;
+  skos:broader zonmwpc:10027;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "curefew"@en .
+
+zonmwpc:10033 a skos:Concept;
+  skos:broader zonmwpc:10017;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10034, zonmwpc:10035, zonmwpc:10036;
+  skos:prefLabel "COVID-19 phase"@en .
+
+zonmwpc:10034 a skos:Concept;
+  skos:broader zonmwpc:10033;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "first wave"@en .
+
+zonmwpc:10035 a skos:Concept;
+  skos:broader zonmwpc:10033;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "second wave"@en .
+
+zonmwpc:10036 a skos:Concept;
+  skos:broader zonmwpc:10033;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "third wave"@en .
+
+zonmwpc:10037 a skos:Concept;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10038, zonmwpc:10051, zonmwpc:10055, zonmwpc:10060, zonmwpc:10067,
+    zonmwpc:10077, zonmwpc:10083, zonmwpc:10091, zonmwpc:10098;
+  skos:prefLabel "population group"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
+
+zonmwpc:10038 a skos:Concept;
+  skos:broader zonmwpc:10037;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10039, zonmwpc:10040, zonmwpc:10041, zonmwpc:10042, zonmwpc:10043,
+    zonmwpc:10044, zonmwpc:10045, zonmwpc:10046, zonmwpc:10047, zonmwpc:10048, zonmwpc:10049,
+    zonmwpc:10050;
+  skos:prefLabel "people after age"@en .
+
+zonmwpc:10039 a skos:Concept;
+  skos:broader zonmwpc:10038;
+  skos:definition "less then 37 weeks gestational outcome"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "prematures"@en .
+
+zonmwpc:10040 a skos:Concept;
+  skos:broader zonmwpc:10038;
+  skos:definition "37 or more weeks gestational outcome"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "newborns"@en .
+
+zonmwpc:10041 a skos:Concept;
+  skos:broader zonmwpc:10038;
+  skos:definition "0-3 months"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "neonates"@en .
+
+zonmwpc:10042 a skos:Concept;
+  skos:broader zonmwpc:10038;
+  skos:definition "3-12 months"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "babies"@en .
+
+zonmwpc:10043 a skos:Concept;
+  skos:broader zonmwpc:10038;
+  skos:definition "1-4 years"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "small children"@en .
+
+zonmwpc:10044 a skos:Concept;
+  skos:broader zonmwpc:10038;
+  skos:definition "4-12 years"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "primary school children"@en .
+
+zonmwpc:10045 a skos:Concept;
+  skos:broader zonmwpc:10038;
+  skos:definition "12-18 years"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "teenager"@en .
+
+zonmwpc:10046 a skos:Concept;
+  skos:broader zonmwpc:10038;
+  skos:definition "16-27 years"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "young people"@en .
+
+zonmwpc:10047 a skos:Concept;
+  skos:broader zonmwpc:10038;
+  skos:definition "18-21 years"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "young adults"@en .
+
+zonmwpc:10048 a skos:Concept;
+  skos:broader zonmwpc:10038;
+  skos:definition "18-65 years"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "adults"@en .
+
+zonmwpc:10049 a skos:Concept;
+  skos:broader zonmwpc:10038;
+  skos:definition "65-80 years"@en;
+  skos:exactMatch <https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.02d&ns=ncit&code=C16268&key=162882687&b=1&n=null>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "elderly"@en .
+
+zonmwpc:10050 a skos:Concept;
+  skos:broader zonmwpc:10038;
+  skos:definition "more than 80 years"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "very elderly"@en .
+
+zonmwpc:10051 a skos:Concept;
+  skos:broader zonmwpc:10037;
+  skos:definition "grouping specifying the determination of an infant's sex shortly after birth"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10052;
+  skos:prefLabel "people after sex"@en .
+
+zonmwpc:10052 a skos:Concept;
+  skos:broader zonmwpc:10051;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10053;
+  skos:prefLabel "male"@en .
+
+zonmwpc:10053 a skos:Concept;
+  skos:broader zonmwpc:10052;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10054;
+  skos:prefLabel "female"@en .
+
+zonmwpc:10054 a skos:Concept;
+  skos:broader zonmwpc:10053;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "intersex"@en .
+
+zonmwpc:10055 a skos:Concept;
+  skos:broader zonmwpc:10037;
+  skos:definition "grouping on basis of person's sense of self as a member of a particular gender"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10056, zonmwpc:10057, zonmwpc:10058, zonmwpc:10059;
+  skos:prefLabel "people after gender"@en .
+
+zonmwpc:10056 a skos:Concept;
+  skos:broader zonmwpc:10055;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "man"@en .
+
+zonmwpc:10057 a skos:Concept;
+  skos:broader zonmwpc:10055;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "woman"@en .
+
+zonmwpc:10058 a skos:Concept;
+  skos:broader zonmwpc:10055;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "non-binary"@en .
+
+zonmwpc:10059 a skos:Concept;
+  skos:broader zonmwpc:10055;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "not specified"@en .
+
+zonmwpc:10060 a skos:Concept;
+  skos:broader zonmwpc:10037;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10061, zonmwpc:10062, zonmwpc:10063, zonmwpc:10064, zonmwpc:10065,
+    zonmwpc:10066;
+  skos:prefLabel "people after education"@en .
+
+zonmwpc:10061 a skos:Concept;
+  skos:broader zonmwpc:10060;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "preschooler"@en .
+
+zonmwpc:10062 a skos:Concept;
+  skos:broader zonmwpc:10060;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "daycare child"@en .
+
+zonmwpc:10063 a skos:Concept;
+  skos:broader zonmwpc:10060;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "primary school student"@en .
+
+zonmwpc:10064 a skos:Concept;
+  skos:broader zonmwpc:10060;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "secondary school student"@en .
+
+zonmwpc:10065 a skos:Concept;
+  skos:broader zonmwpc:10060;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "vocational school student"@en .
+
+zonmwpc:10066 a skos:Concept;
+  skos:broader zonmwpc:10060;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "university student"@en .
+
+zonmwpc:10067 a skos:Concept;
+  skos:broader zonmwpc:10037;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10068, zonmwpc:10069, zonmwpc:10070, zonmwpc:10071, zonmwpc:10072,
+    zonmwpc:10073, zonmwpc:10074, zonmwpc:10075, zonmwpc:10076;
+  skos:prefLabel "people after employment"@en .
+
+zonmwpc:10068 a skos:Concept;
+  skos:broader zonmwpc:10067;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "individual with low socio-economic status"@en .
+
+zonmwpc:10069 a skos:Concept;
+  skos:broader zonmwpc:10067;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "individual with high socio-economic status"@en .
+
+zonmwpc:10070 a skos:Concept;
+  skos:broader zonmwpc:10067;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "employed person"@en .
+
+zonmwpc:10071 a skos:Concept;
+  skos:broader zonmwpc:10067;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "self-employed individual"@en .
+
+zonmwpc:10072 a skos:Concept;
+  skos:broader zonmwpc:10067;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "employee with a temporary contract"@en .
+
+zonmwpc:10073 a skos:Concept;
+  skos:broader zonmwpc:10067;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "informal care provider"@en .
+
+zonmwpc:10074 a skos:Concept;
+  skos:broader zonmwpc:10067;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "professional care provider"@en .
+
+zonmwpc:10075 a skos:Concept;
+  skos:broader zonmwpc:10067;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "individual living in a care home"@en .
+
+zonmwpc:10076 a skos:Concept;
+  skos:broader zonmwpc:10067;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "tourist"@en .
+
+zonmwpc:10077 a skos:Concept;
+  skos:broader zonmwpc:10037;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10078, zonmwpc:10079, zonmwpc:10080, zonmwpc:10081, zonmwpc:10082;
+  skos:prefLabel "people with migration background"@en .
+
+zonmwpc:10078 a skos:Concept;
+  skos:broader zonmwpc:10077;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "individual with a migration background"@en .
+
+zonmwpc:10079 a skos:Concept;
+  skos:broader zonmwpc:10077;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "statushouder"@en .
+
+zonmwpc:10080 a skos:Concept;
+  skos:broader zonmwpc:10077;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "asylum seeker"@en .
+
+zonmwpc:10081 a skos:Concept;
+  skos:broader zonmwpc:10077;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "undocumented migrant"@en .
+
+zonmwpc:10082 a skos:Concept;
+  skos:broader zonmwpc:10077;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "season labour migrant"@en .
+
+zonmwpc:10083 a skos:Concept;
+  skos:broader zonmwpc:10037;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10084, zonmwpc:10085, zonmwpc:10086, zonmwpc:10087, zonmwpc:10088,
+    zonmwpc:10089, zonmwpc:10090;
+  skos:prefLabel "people after COVID-19 risk factors"@en .
+
+zonmwpc:10084 a skos:Concept;
+  skos:broader zonmwpc:10083;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "individual with a chronic illness"@en .
+
+zonmwpc:10085 a skos:Concept;
+  skos:broader zonmwpc:10083;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "individual with underlying disease(s)"@en .
+
+zonmwpc:10086 a skos:Concept;
+  skos:broader zonmwpc:10083;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "patient with (covid-19 associated) thrombosis"@en .
+
+zonmwpc:10087 a skos:Concept;
+  skos:broader zonmwpc:10083;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "individual with obesity"@en .
+
+zonmwpc:10088 a skos:Concept;
+  skos:broader zonmwpc:10083;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "patient using anticoagulants"@en .
+
+zonmwpc:10089 a skos:Concept;
+  skos:broader zonmwpc:10083;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "surgical patient"@en .
+
+zonmwpc:10090 a skos:Concept;
+  skos:broader zonmwpc:10083;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "blood donor"@en .
+
+zonmwpc:10091 a skos:Concept;
+  skos:broader zonmwpc:10037;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10092, zonmwpc:10093, zonmwpc:10094, zonmwpc:10095, zonmwpc:10096,
+    zonmwpc:10097;
+  skos:prefLabel "COVID-19 related grouping"@en .
+
+zonmwpc:10092 a skos:Concept;
+  skos:broader zonmwpc:10091;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "hospitalised covid-19 patient"@en .
+
+zonmwpc:10093 a skos:Concept;
+  skos:broader zonmwpc:10091;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "non-hospitalised covid-19 patient"@en .
+
+zonmwpc:10094 a skos:Concept;
+  skos:broader zonmwpc:10091;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "long-covid-19 patient"@en .
+
+zonmwpc:10095 a skos:Concept;
+  skos:broader zonmwpc:10091;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "Individual after first infection"@en .
+
+zonmwpc:10096 a skos:Concept;
+  skos:broader zonmwpc:10091;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "individual with sars-cov-2 vaccination"@en .
+
+zonmwpc:10097 a skos:Concept;
+  skos:broader zonmwpc:10091;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "individual refusing sars-cov-2 vaccination"@en .
+
+zonmwpc:10098 a skos:Concept;
+  skos:broader zonmwpc:10037;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10099, zonmwpc:10100, zonmwpc:10101, zonmwpc:10102, zonmwpc:10103,
+    zonmwpc:10104, zonmwpc:10105, zonmwpc:10106;
+  skos:prefLabel "target group of policy interventions"@en .
+
+zonmwpc:10099 a skos:Concept;
+  skos:broader zonmwpc:10098;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "homeless"@en .
+
+zonmwpc:10100 a skos:Concept;
+  skos:broader zonmwpc:10098;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "victim of domestic violence"@en .
+
+zonmwpc:10101 a skos:Concept;
+  skos:broader zonmwpc:10098;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "illiterate people"@en .
+
+zonmwpc:10102 a skos:Concept;
+  skos:broader zonmwpc:10098;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "physical disabled"@en .
+
+zonmwpc:10103 a skos:Concept;
+  skos:broader zonmwpc:10098;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "intellectual disabled"@en .
+
+zonmwpc:10104 a skos:Concept;
+  skos:broader zonmwpc:10098;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "mental health patient"@en .
+
+zonmwpc:10105 a skos:Concept;
+  skos:broader zonmwpc:10098;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "policy-maker"@en .
+
+zonmwpc:10106 a skos:Concept;
+  skos:broader zonmwpc:10098;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "single household person"@en .
+
+zonmwpc:10107 a skos:Concept;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10108, zonmwpc:10118, zonmwpc:10124, zonmwpc:10127, zonmwpc:10128,
+    zonmwpc:10132, zonmwpc:10135, zonmwpc:10141;
+  skos:prefLabel "data"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
+
+zonmwpc:10108 a skos:Concept;
+  skos:broader zonmwpc:10107;
+  skos:definition "Grouping of terms that relate to the health and physical condition of an individual subject, as well as biological information about any relevant pathogens"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10109, zonmwpc:10110, zonmwpc:10111, zonmwpc:10112, zonmwpc:10113,
+    zonmwpc:10114, zonmwpc:10115, zonmwpc:10116, zonmwpc:10117;
+  skos:prefLabel "health data"@en .
+
+zonmwpc:10109 a skos:Concept;
+  dct:source <http://purl.obolibrary.org/obo/ERO_0001177>;
+  skos:broader zonmwpc:10108;
+  skos:definition "Data that contains patient health information generated by one or more encounters in any care delivery setting. Included in this information are patient demographics, progress notes, problems, medications, vital signs, past medical history, immunizations, laboratory data and radiology reports."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/ERO_0001177>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "health record data"@en .
+
+zonmwpc:10110 a skos:Concept;
+  dct:source <https://bioportal.bioontology.org/ontologies/ONTOAD?p=classes&conceptid=http%3A%2F%2Fdoe-generated-ontology.com%2FOntoAD%23C0262926>;
+  skos:broader zonmwpc:10108;
+  skos:definition "A collection of information about a person's health. It may include information about allergies, illnesses and surgeries, and dates and results of physical exams, tests, screenings, and immunizations. It may also include information about medicines taken and about diet and exercise"@en;
+  skos:exactMatch <https://bioportal.bioontology.org/ontologies/ONTOAD?p=classes&conceptid=http%3A%2F%2Fdoe-generated-ontology.com%2FOntoAD%23C0262926>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "medical history data"@en .
+
+zonmwpc:10111 a skos:Concept;
+  dct:source <http://purl.obolibrary.org/obo/OGMS_0000073>;
+  skos:broader zonmwpc:10108;
+  skos:definition "The representation of a conclusion of a diagnostic process."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/OGMS_0000073>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "diagnostic data"@en .
+
+zonmwpc:10112 a skos:Concept;
+  skos:broader zonmwpc:10108;
+  skos:definition "Data related to physiological recording or monitoring."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/ERO_0001186>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "physiological data"@en .
+
+zonmwpc:10113 a skos:Concept;
+  dct:source <http://purl.obolibrary.org/obo/OGMS_0000018>;
+  skos:broader zonmwpc:10108;
+  skos:definition "A representation of a quality of a specimen that is the output of a laboratory test and that can support an inference to an assertion about some quality of the patient."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/OGMS_0000018>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "laboratory data"@en .
+
+zonmwpc:10114 a skos:Concept;
+  dct:source <http://purl.obolibrary.org/obo/OGMS_0000090>;
+  skos:broader zonmwpc:10108;
+  skos:definition "A planned process whose completion is hypothesized by a health care provider to eliminate, prevent, or alleviate a disorder, the signs and symptoms of a disorder, or a pathological process"@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/OGMS_0000090>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "treatment data"@en .
+
+zonmwpc:10115 a skos:Concept;
+  dct:source <http://purl.obolibrary.org/obo/CHEBI_52217>;
+  skos:altLabel "pharmaceutical"@en;
+  skos:broader zonmwpc:10108;
+  skos:definition "Any substance introduced into a living organism with therapeutic or diagnostic purpose."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/CHEBI_52217>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "medication data"@en .
+
+zonmwpc:10116 a skos:Concept;
+  dct:source <http://purl.obolibrary.org/obo/ERO_0100354>;
+  skos:broader zonmwpc:10108;
+  skos:definition "Data that is about molecules or phenomena occurring at a molecular level (e.g. processes such as molecular interactions, chemical reactions, gene expression etc)."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/ERO_0100354>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "molecular data"@en .
+
+zonmwpc:10117 a skos:Concept;
+  dct:source <http://semanticscience.org/resource/SIO_010028>;
+  skos:broader zonmwpc:10108;
+  skos:definition "Data is data pertaining to genetics."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/ERO_0100359>, <http://semanticscience.org/resource/SIO_010028>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "genetic data"@en .
+
+zonmwpc:10118 a skos:Concept;
+  skos:broader zonmwpc:10107;
+  skos:definition "Group of subclasses of various types of diagnostic imaging technologies"@en;
+  skos:exactMatch <http://purl.bioontology.org/ontology/HL7/C001192>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10119, zonmwpc:10120, zonmwpc:10121, zonmwpc:10122, zonmwpc:10123,
+    zonmwpc:10125, zonmwpc:10126, zonmwpc:10129, zonmwpc:10130, zonmwpc:10131;
+  skos:prefLabel "diagnostic imaging"@en .
+
+zonmwpc:10119 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C16809&key=1826977516&b=1&n=null>;
+  skos:altLabel "MRI"@en;
+  skos:broader zonmwpc:10118;
+  skos:definition "Imaging that uses radiofrequency waves and a strong magnetic field rather than x-rays to provide detailed pictures of internal organs and tissues. The technique is valuable for the diagnosis of many pathologic conditions, including cancer, heart and vascular disease, stroke, and joint and musculoskeletal disorders."@en;
+  skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C16809>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "magnetic resonance imaging"@en .
+
+zonmwpc:10120 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C38101&key=1939144925&b=1&n=null>;
+  skos:altLabel "X-ray"@en;
+  skos:broader zonmwpc:10118;
+  skos:definition "An image of the structure penetrated by the radiation using the emission of x-rays"@en;
+  skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C17262&jump_to_nav=true>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "X-ray imaging"@en .
+
+zonmwpc:10121 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C64384&key=168018700&b=1&n=null>;
+  skos:broader zonmwpc:10118;
+  skos:definition "High frequency sound, generally with a frequency greater than 20,000 Hz."@en;
+  skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C64384&jump_to_nav=true>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "ultrasound"@en .
+
+zonmwpc:10122 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C17204&key=1418861988&b=1&n=null>;
+  skos:altLabel "CT"@en;
+  skos:broader zonmwpc:10118;
+  skos:definition "A method of examining structures within the body by scanning them with X rays and using a computer to construct a series of cross-sectional scans along a single axis."@en;
+  skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C17204&jump_to_nav=true>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "computed tomography"@en .
+
+zonmwpc:10123 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C62663>;
+  skos:broader zonmwpc:10118;
+  skos:definition "In medicine, a procedure in which an infrared camera (one that senses heat) is used to measure temperature differences on the surface of the body. The camera makes pictures that show areas of possible abnormal cell growth because abnormal tissue gives off more heat than normal tissue does."@en;
+  skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C62663&jump_to_nav=true>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "infrared thermography"@en .
+
+zonmwpc:10124 a skos:Concept;
+  skos:broader zonmwpc:10107;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "societal data"@en .
+
+zonmwpc:10125 a skos:Concept;
+  skos:broader zonmwpc:10118;
+  skos:definition "A data set that contains the outcome of a survey."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/OMIABIS_0000060>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "survey data"@en .
+
+zonmwpc:10126 a skos:Concept;
+  skos:broader zonmwpc:10118;
+  skos:closeMatch <https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C15843>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "COVID policy and prevention measures"@en .
+
+zonmwpc:10127 a skos:Concept;
+  skos:broader zonmwpc:10107;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "environmental data"@en .
+
+zonmwpc:10128 a skos:Concept;
+  skos:broader zonmwpc:10107;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "geographical data"@en .
+
+zonmwpc:10129 a skos:Concept;
+  skos:broader zonmwpc:10118;
+  skos:exactMatch <http://purl.jp/bio/4/id/200906051703202632>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "aerial photography"@en .
+
+zonmwpc:10130 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C43433&key=n1963439227&b=1&n=null>;
+  skos:broader zonmwpc:10118;
+  skos:definition "A usually 2-dimensional diagrammatic representation of an object or area."@en;
+  skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C43433>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "map"@en .
+
+zonmwpc:10131 a skos:Concept;
+  skos:broader zonmwpc:10118;
+  skos:definition "Data produced by a system designed to capture, store, update, manipulate, analyze and display data that are linked to location."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "GIS data"@en;
+  skos:relatedMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C15754&key=n1963476518&b=1&n=null> .
+
+zonmwpc:10132 a skos:Concept;
+  skos:broader zonmwpc:10107;
+  skos:definition "Group of subclasses of audiovisual media that are not imaging technology"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10133, zonmwpc:10134;
+  skos:prefLabel "audiovisual data"@en .
+
+zonmwpc:10133 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C54273&key=1753678631&b=1&n=null>;
+  skos:broader zonmwpc:10132;
+  skos:definition "A visual representation of an object, scene, person or abstraction."@en;
+  skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C54273&jump_to_nav=true>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "picture"@en .
+
+zonmwpc:10134 a skos:Concept;
+  dct:source ":https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C91063"@en;
+  skos:broader zonmwpc:10132;
+  skos:definition "The storing or preserving of video images to be displayed later."@en;
+  skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C96985&jump_to_nav=true>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "video recording"@en .
+
+zonmwpc:10135 a skos:Concept;
+  skos:broader zonmwpc:10107;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10136, zonmwpc:10137, zonmwpc:10138;
+  skos:prefLabel "contextual data"@en .
+
+zonmwpc:10136 a skos:Concept;
+  skos:broader zonmwpc:10135;
+  skos:definition "The text of notes taken in the field about an event."@en;
+  skos:exactMatch <http://rs.tdwg.org/dwc/terms/fieldNotes>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "field note"@en .
+
+zonmwpc:10137 a skos:Concept;
+  skos:broader zonmwpc:10135;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "focus group discussion"@en;
+  skos:relatedMatch <http://ontologies.dbmi.pitt.edu/edda/StudyDesigns.owl#focus_group> .
+
+zonmwpc:10138 a skos:Concept;
+  skos:broader zonmwpc:10135;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10139, zonmwpc:10140;
+  skos:prefLabel "social media data"@en;
+  skos:relatedMatch <http://purl.bioontology.org/ontology/MESH/D061108> .
+
+zonmwpc:10139 a skos:Concept;
+  skos:broader zonmwpc:10138;
+  skos:definition "Work consisting of records, usually private, of writers' experiences, observations, feelings, attitudes, etc. They may also be works marked in calendar order in which to note appointments and the like."@en;
+  skos:exactMatch <http://purl.bioontology.org/ontology/MESH/D019497>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "diaries"@en .
+
+zonmwpc:10140 a skos:Concept;
+  skos:broader zonmwpc:10138;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "interview data"@en;
+  skos:relatedMatch <http://purl.obolibrary.org/obo/FBcv_0000205> .
+
+zonmwpc:10141 a skos:Concept;
+  skos:broader zonmwpc:10107;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10142, zonmwpc:10143;
+  skos:prefLabel "other type of data"@en .
+
+zonmwpc:10142 a skos:Concept;
+  dct:source <https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.02d&ns=ncit&code=C15320&key=1850760702&b=1&n=null>;
+  skos:broader zonmwpc:10141;
+  skos:definition "A plan detailing how a study will be performed in order to represent the phenomenon under examination, to answer the research questions that have been asked, and defining the methods of data analysis. Study design is driven by research hypothesis being posed, study subject/population/sample available, logistics/resources: technology, support, networking, collaborative support, etc."@en;
+  skos:exactMatch <https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.02d&ns=ncit&code=C15320&key=1850760702&b=1&n=null>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "study design"@en .
+
+zonmwpc:10143 a skos:Concept;
+  skos:broader zonmwpc:10141;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "prototype description"@en .
+
+zonmwpc:10144 a skos:Concept;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10145, zonmwpc:10153, zonmwpc:10169, zonmwpc:10180;
+  skos:prefLabel "biomaterial"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
+
+zonmwpc:10145 a skos:Concept;
+  dct:source <http://purl.obolibrary.org/obo/OBI_0100026>;
+  skos:broader zonmwpc:10144;
+  skos:definition "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/OBI_0100026>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10146, zonmwpc:10147, zonmwpc:10148, zonmwpc:10149, zonmwpc:10150,
+    zonmwpc:10151, zonmwpc:10152;
+  skos:prefLabel "organism"@en .
+
+zonmwpc:10146 a skos:Concept;
+  dct:source <https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.02d&ns=ncit&code=C14225&key=1926508693&b=1&n=null>;
+  skos:broader zonmwpc:10145;
+  skos:definition "The bipedal primate mammal, Homo sapiens; belonging to man or mankind; pertaining to man or to the race of man; use of man as experimental subject or unit of analysis in research."@en;
+  skos:exactMatch <https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.02d&ns=ncit&code=C14225&key=1926508693&b=1&n=null>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "human"@en .
+
+zonmwpc:10147 a skos:Concept;
+  dct:source "MeSH"@en;
+  skos:broader zonmwpc:10145;
+  skos:definition "Carnivores of genus Mustela of the family MUSTELIDAE. The European mink, which has white upper and lower lips, was widely trapped for commercial purposes and is classified as endangered. The American mink, lacking a white upper lip, is farmed commercially."@en;
+  skos:exactMatch <http://purl.bioontology.org/ontology/MESH/D008907>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "mink"@en .
+
+zonmwpc:10148 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10145;
+  skos:definition "Any of numerous species of small rodents belonging to the genus Mus and various related genera of the family Muridae."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14238>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "mouse"@en .
+
+zonmwpc:10149 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10145;
+  skos:definition "Any of numerous species of rodents belonging to the genus Rattus and/or various related genera of the family Muridae."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C160998>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "rat"@en .
+
+zonmwpc:10150 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10145;
+  skos:definition "An infectious agent which consists of two parts, genetic material and a protein coat. These organisms lack independent metabolism, and they must infect the cells of other types of organisms to reproduce. Most viruses are capable of passing through fine filters that retain bacteria, and are not visible through a light microscope."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14283>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "virus"@en .
+
+zonmwpc:10151 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10145;
+  skos:definition "Unicellular, prokaryotic organisms that reproduce by cell division and usually have cell walls; can be shaped like spheres, rods or spirals and can be found in virtually any environment."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14187>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "bacteria"@en .
+
+zonmwpc:10152 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10145;
+  skos:definition "Any organism that has a close, symbiotic relationship with a separate, host organism."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/NCIT_C28176>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "parasite"@en .
+
+zonmwpc:10153 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10144;
+  skos:definition "Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical."@en;
+  skos:exactMatch <https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.02d&ns=ncit&code=C45306&key=n1938058024&b=1&n=null>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10154, zonmwpc:10155, zonmwpc:10156, zonmwpc:10157, zonmwpc:10158,
+    zonmwpc:10159, zonmwpc:10160, zonmwpc:10161, zonmwpc:10162, zonmwpc:10163, zonmwpc:10164,
+    zonmwpc:10165, zonmwpc:10166, zonmwpc:10167, zonmwpc:10168;
+  skos:prefLabel "substance"@en .
+
+zonmwpc:10154 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10153;
+  skos:definition "A liquid tissue; its major function is to transport oxygen throughout the body. It also supplies the tissues with nutrients, removes waste products, and contains various components of the immune system defending the body against infection. Several hormones also travel in the blood."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12434>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "blood"@en .
+
+zonmwpc:10155 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10153;
+  skos:definition "The air that is inhaled and exhaled during respiration."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C94552>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "breath"@en .
+
+zonmwpc:10156 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  skos:broader zonmwpc:10153;
+  skos:definition "The material discharged from the bowel during defecation. It consists of undigested food, intestinal mucus, epithelial cells, and bacteria."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13234\u000Ahttp://purl.bioontology.org/ontology/SNOMEDCT/39477002>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "feces"@en .
+
+zonmwpc:10157 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  skos:broader zonmwpc:10153;
+  skos:definition "Plasma is the fluid (noncellular) portion of the circulating blood, as distinguished from the serum that is the fluid portion of the blood obtained by removal of the fibrin clot and blood cells after coagulation."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13356\u000Ahttp://purl.bioontology.org/ontology/SNOMEDCT/50863008>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "plasma"@en .
+
+zonmwpc:10158 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  skos:broader zonmwpc:10153;
+  skos:definition "The watery fluid in the mouth made by the salivary glands. Saliva moistens food to help digestion and it helps protect the mouth against infections."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13275\u000Ahttp://purl.bioontology.org/ontology/SNOMEDCT/256897009>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "saliva"@en .
+
+zonmwpc:10159 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10153;
+  skos:definition "The thick, whitish secretion of the male reproductive organs. It is composed of spermatozoa in their nutrient plasma, secretions from the prostate, seminal vesicles, and various other glands, epithelial cells, and minor constituents."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13277>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "semen"@en .
+
+zonmwpc:10160 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CTT>;
+  skos:broader zonmwpc:10153;
+  skos:definition "The clear portion of the blood that remains after the removal of the blood cells and the clotting proteins."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13325>, <http://purl.bioontology.org/ontology/SNOMEDCT/67922002>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "serum"@en .
+
+zonmwpc:10161 a skos:Concept;
+  dct:source "Ontobee"@en;
+  skos:broader zonmwpc:10153;
+  skos:definition "Wastewater that is contaminated with feces or urine"@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/ENVO_00002018;\u0020https://en.wikipedia.org/wiki/Sewage>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "sewage"@en .
+
+zonmwpc:10162 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10153;
+  skos:definition "Material containing mucus, cellular debris, microorganisms and sometimes blood or pus. It is ejected through the mouth from the lungs, bronchi, and trachea."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13278>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "sputum"@en .
+
+zonmwpc:10163 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10153;
+  skos:definition "A fluid containing oils, mucin, and proteins, which is secreted by the lacrimal gland and cleans and lubricates the eye."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C33739>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "tear"@en .
+
+zonmwpc:10164 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10153;
+  skos:definition "An anatomical structure consisting of similarly specialized cells and intercellular matrix, aggregated according to genetically determined spatial relationships, performing a specific function."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "tissue"@en .
+
+zonmwpc:10165 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10153;
+  skos:definition "The fluid that is excreted by the kidneys. It is stored in the bladder and discharged through the urethra."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13283>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "urine"@en .
+
+zonmwpc:10166 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10153;
+  skos:definition "A peripheral blood cell with a single nucleus. This category includes lymphocytes and monocytes."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12954>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "peripheral blood mononuclear cell"@en .
+
+zonmwpc:10167 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10153;
+  skos:definition "A group of materials of either plant, animal or artificial origin containing essential body nutrients that can be ingested by an organism to produce energy, stimulate growth, and maintain life."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28294>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "nutrition"@en .
+
+zonmwpc:10168 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10153;
+  skos:definition "The watery fluid, consisting of vulvar gland, endometrium, and oviduct secretions, cervical mucus, vaginal wall plasma transudate, exfoliated cells, and bacterial and immune cell products, that hydrates and forms an antimicrobial barrier for the mucosa of the lower female genital tract."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C150892>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "cervicovaginal secretion"@en .
+
+zonmwpc:10169 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  skos:broader zonmwpc:10144;
+  skos:definition "A part of a thing, or of several things, taken to demonstrate or to determine the character of the whole, e.g. a substance, or portion of material obtained for use in testing, examination, or study; particularly, a preparation of tissue or bodily fluid taken for examination or diagnosis."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157>, <http://purl.bioontology.org/ontology/SNOMEDCT/123038009>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10170, zonmwpc:10171, zonmwpc:10172, zonmwpc:10173, zonmwpc:10174,
+    zonmwpc:10175, zonmwpc:10176, zonmwpc:10177, zonmwpc:10178, zonmwpc:10179;
+  skos:prefLabel "specimen"@en .
+
+zonmwpc:10170 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10169;
+  skos:definition "A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16403>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "cell lines"@en .
+
+zonmwpc:10171 a skos:Concept;
+  dct:source "OBI"@en;
+  skos:broader zonmwpc:10169;
+  skos:definition "a specimen that is output of a specimen creation process used for an investigation without storage."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/OBI_0000971>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "fresh specimen"@en .
+
+zonmwpc:10172 a skos:Concept;
+  dct:source "OBI"@en;
+  skos:broader zonmwpc:10169;
+  skos:definition "A specimen that has been frozen in order to store it."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/OBI_0000922>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "frozen specimen"@en .
+
+zonmwpc:10173 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10169;
+  skos:definition "A biospecimen collected from the nasal passages by swabbing."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/NCIT_C155833>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "nasal swab"@en .
+
+zonmwpc:10174 a skos:Concept;
+  dct:source "Ontology for Biomedical Investigations"@en;
+  skos:broader zonmwpc:10169;
+  skos:definition "A specimen that is collected with a swab from the surface of a nasopharynx."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/IAO_0000122>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "nasopharyngeal swab specimen"@en .
+
+zonmwpc:10175 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  skos:broader zonmwpc:10169;
+  skos:definition "A biospecimen collected from the oropharynx by swabbing."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C155835>, <http://purl.bioontology.org/ontology/SNOMEDCT/258529004>,
+    <http://purl.bioontology.org/ontology/SNOMEDCT/461911000124106>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "oropharyngeal swab specimen"@en .
+
+zonmwpc:10176 a skos:Concept;
+  dct:source "SNOMED-CT"@en;
+  skos:broader zonmwpc:10169;
+  skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/119376003>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "tissue specimen"@en .
+
+zonmwpc:10177 a skos:Concept;
+  dct:source "OBI"@en;
+  skos:broader zonmwpc:10169;
+  skos:definition "A specimen that is collected with a swab from the surface of a vagina."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/OBI_0002611>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "Vaginal swab specimen"@en .
+
+zonmwpc:10178 a skos:Concept;
+  dct:source "SNOMED-CT"@en;
+  skos:broader zonmwpc:10169;
+  skos:definition "A specimen that has been fixed in formalin and embedded in paraffin."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "FFPE tissue specimen"@en .
+
+zonmwpc:10179 a skos:Concept;
+  dct:source "FBbi"@en;
+  skos:broader zonmwpc:10169;
+  skos:definition "glutaraldehyde fixed tissue"@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/OBI_1200000>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "glutaraldehyde fixed tissue specimen"@en .
+
+zonmwpc:10180 a skos:Concept;
+  skos:broader zonmwpc:10144;
+  skos:exactMatch <http://purl.obolibrary.org/obo/FBbi_00000011>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10181, zonmwpc:10182, zonmwpc:10183, zonmwpc:10184, zonmwpc:10185;
+  skos:prefLabel "macromolecule"@en .
+
+zonmwpc:10181 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov>;
+  skos:broader zonmwpc:10180;
+  skos:definition "Single-stranded DNA that is complementary to messenger RNA or DNA that has been synthesized from messenger RNA by reverse transcriptase."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C324>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "cDNA"@en .
+
+zonmwpc:10182 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  skos:broader zonmwpc:10180;
+  skos:definition "A long linear double-stranded polymer formed from nucleotides attached to a deoxyribose backbone and found in the nucleus of a cell; associated with the transmission of genetic information."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C449\u000Ahttp://purl.bioontology.org/ontology/SNOMEDCT/24851008>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "DNA"@en .
+
+zonmwpc:10183 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  skos:broader zonmwpc:10180;
+  skos:definition "Single-stranded long chain of nucleotides containing ribose. It is the end product of DNA transcription by the enzyme RNA polymerase. It is essential in protein synthesis."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C812>, <http://purl.bioontology.org/ontology/SNOMEDCT/27888000>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "RNA"@en .
+
+zonmwpc:10184 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  skos:broader zonmwpc:10180;
+  skos:definition "A group of complex organic macromolecules composed of one or more chains (linear polymers) of alpha-L-amino acids linked by peptide bonds and ranging in size from a few thousand to over 1 million Daltons. Proteins are fundamental genetically encoded components of living cells with specific structures and functions dictated by amino acid sequence."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17021\u000Ahttp://purl.bioontology.org/ontology/SNOMEDCT/88878007>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "protein"@en .
+
+zonmwpc:10185 a skos:Concept;
+  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  skos:broader zonmwpc:10180;
+  skos:definition "A type of protein made by B lymphocytes in response to a foreign substance (antigen). Each antibody only binds to a specific antigen, helping to destroy the antigen directly or by assisting white blood cells to destroy the antigen."@en;
+  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16295\u000Ahttp://purl.bioontology.org/ontology/SNOMEDCT/68498002>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "antibody"@en .
+
+zonmwpc:10186 a skos:Concept;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10187, zonmwpc:10209, zonmwpc:10210, zonmwpc:10211, zonmwpc:10212,
+    zonmwpc:10213;
+  skos:prefLabel "services"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
+
+zonmwpc:10187 a skos:Concept;
+  skos:broader zonmwpc:10186;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10188, zonmwpc:10189, zonmwpc:10190, zonmwpc:10191, zonmwpc:10192,
+    zonmwpc:10193, zonmwpc:10194, zonmwpc:10195, zonmwpc:10196, zonmwpc:10197, zonmwpc:10198,
+    zonmwpc:10199, zonmwpc:10200, zonmwpc:10201, zonmwpc:10202, zonmwpc:10203, zonmwpc:10204,
+    zonmwpc:10205, zonmwpc:10206, zonmwpc:10207, zonmwpc:10208;
+  skos:prefLabel "laboratory services"@en .
+
+zonmwpc:10188 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "ML-1 laboratory"@en .
+
+zonmwpc:10189 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "ML-2 laboratory"@en .
+
+zonmwpc:10190 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/409600007>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "ML-3 laboratory"@en .
+
+zonmwpc:10191 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:definition "Biosafety level one, the lowest level, applies to work with agents that usually pose a minimal potential threat to laboratory workers and the environment and do not consistently cause disease in healthy adults."@en;
+  skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/409603009>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "BSL-1 laboratory"@en .
+
+zonmwpc:10192 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:definition """Biosafety level two would cover work with agents associated with human 
+disease, in other words, pathogenic or infectious organisms posing a 
+moderate hazard."""@en;
+  skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/409604003>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "BSL-2 laboratory"@en .
+
+zonmwpc:10193 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:definition "Yellow fever, St. Louis encephalitis and West Nile virus are examples of agents requiring biosafety level 3 practices and containment. Work with these agents is strictly controlled and must be registered with all appropriate government agencies."@en;
+  skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/409605002>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "BSL-3 laboratory"@en .
+
+zonmwpc:10194 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:definition "Agents requiring BSL 4 facilities and practices are extremely dangerous pand pose a high risk of life-threatening disease. Examples are the Ebola virus, the Lassa virus, and any agent with unknown risks of pathogenicity and transmission."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "BSL-4 laboratory"@en .
+
+zonmwpc:10195 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:definition "helps researchers produce custom antibodies"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "antibody facility"@en .
+
+zonmwpc:10196 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "proteomics facility"@en .
+
+zonmwpc:10197 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:definition "complete analytical platform, coupled to advanced extraction techniques, sample prep methods and vast experience, allows to offer non-targetted or targetted metabolomic studies, metabolomic fingerprinting or footprinting studies"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "Metabolomics facility"@en .
+
+zonmwpc:10198 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:definition "Keeping and breeding of test animals for the purpose of scientific research and education"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "animal facility (breeding/transgenesis)"@en .
+
+zonmwpc:10199 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:definition "accommodates all research and diagnostic flow cytometry equipment"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "flow cytometry facility"@en .
+
+zonmwpc:10200 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:definition "connect clinical and biological research with microscopy and image analysis developments, offer support and provide training and education to make use of the facility"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "microscopy facility"@en .
+
+zonmwpc:10201 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:definition "provides support for Next Generation Sequencing (NGS) based research"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "sequencing facility"@en .
+
+zonmwpc:10202 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:definition "human induced Pluripotent Stem Cell (hiPSC) facility: generation of research grade hiPSCs from different tissue sources"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "hiPSC facility"@en .
+
+zonmwpc:10203 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "GMP facility"@en .
+
+zonmwpc:10204 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:definition "offers advice on advanced quantitative, statistical and computational methods for biomedical and clinical researchers"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "data analytics facility"@en .
+
+zonmwpc:10205 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:definition "A facility or core that provides storage for any type of biospecimen."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "biobank facility"@en .
+
+zonmwpc:10206 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "viral vector facility"@en .
+
+zonmwpc:10207 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "pharmacy"@en .
+
+zonmwpc:10208 a skos:Concept;
+  skos:broader zonmwpc:10187;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "metabolomics facility"@en .
+
+zonmwpc:10209 a skos:Concept;
+  skos:broader zonmwpc:10186;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "repository"@en .
+
+zonmwpc:10210 a skos:Concept;
+  skos:broader zonmwpc:10186;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "biobank"@en .
+
+zonmwpc:10211 a skos:Concept;
+  skos:broader zonmwpc:10186;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "data catalogue"@en .
+
+zonmwpc:10212 a skos:Concept;
+  skos:broader zonmwpc:10186;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "ELSI service"@en .
+
+zonmwpc:10213 a skos:Concept;
+  skos:broader zonmwpc:10186;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "other online service"@en .
