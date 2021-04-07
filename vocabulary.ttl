@@ -994,7 +994,7 @@ zonmwpc:10156 a skos:Concept;
   dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13234>;
   skos:broader zonmwpc:10153;
   skos:definition "The material discharged from the bowel during defecation. It consists of undigested food, intestinal mucus, epithelial cells, and bacteria."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13234\u000Ahttp://purl.bioontology.org/ontology/SNOMEDCT/39477002>;
+  skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/39477002>, <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13234>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "feces"@en .
 
