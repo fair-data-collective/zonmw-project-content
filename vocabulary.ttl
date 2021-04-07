@@ -25,8 +25,8 @@
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "ZonMW Project Content Vocabulary"@en;
   pav:createdOn "2021-02-08T15:00:00+00:00"@en;
-  pav:lastUpdatedOn "2021-04-06T22:00:00+00:00"@en;
-  pav:version "0.2.0"@en;
+  pav:lastUpdatedOn "2021-04-07T00:00:00+00:00"@en;
+  pav:version "0.3.0"@en;
   skos:hasTopConcept zonmwpc:10000, zonmwpc:10001, zonmwpc:10017, zonmwpc:10037, zonmwpc:10107,
     zonmwpc:10144, zonmwpc:10186;
   skos:prefLabel "ZonMW Project Content Vocabulary"@en .
@@ -722,7 +722,7 @@ zonmwpc:10119 a skos:Concept;
   skos:altLabel "MRI"@en;
   skos:broader zonmwpc:10118;
   skos:definition "Imaging that uses radiofrequency waves and a strong magnetic field rather than x-rays to provide detailed pictures of internal organs and tissues. The technique is valuable for the diagnosis of many pathologic conditions, including cancer, heart and vascular disease, stroke, and joint and musculoskeletal disorders."@en;
-  skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C16809>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C16809&key=1826977516&b=1&n=null>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "magnetic resonance imaging"@en .
 
@@ -731,7 +731,7 @@ zonmwpc:10120 a skos:Concept;
   skos:altLabel "X-ray"@en;
   skos:broader zonmwpc:10118;
   skos:definition "An image of the structure penetrated by the radiation using the emission of x-rays"@en;
-  skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C17262&jump_to_nav=true>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C38101&key=1939144925&b=1&n=null>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "X-ray imaging"@en .
 
@@ -739,7 +739,7 @@ zonmwpc:10121 a skos:Concept;
   dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C64384&key=168018700&b=1&n=null>;
   skos:broader zonmwpc:10118;
   skos:definition "High frequency sound, generally with a frequency greater than 20,000 Hz."@en;
-  skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C64384&jump_to_nav=true>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C64384&key=168018700&b=1&n=null>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "ultrasound"@en .
 
@@ -748,7 +748,7 @@ zonmwpc:10122 a skos:Concept;
   skos:altLabel "CT"@en;
   skos:broader zonmwpc:10118;
   skos:definition "A method of examining structures within the body by scanning them with X rays and using a computer to construct a series of cross-sectional scans along a single axis."@en;
-  skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C17204&jump_to_nav=true>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C17204&key=1418861988&b=1&n=null>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "computed tomography"@en .
 
@@ -756,7 +756,7 @@ zonmwpc:10123 a skos:Concept;
   dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C62663>;
   skos:broader zonmwpc:10118;
   skos:definition "In medicine, a procedure in which an infrared camera (one that senses heat) is used to measure temperature differences on the surface of the body. The camera makes pictures that show areas of possible abnormal cell growth because abnormal tissue gives off more heat than normal tissue does."@en;
-  skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C62663&jump_to_nav=true>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C62663>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "infrared thermography"@en .
 
@@ -799,7 +799,7 @@ zonmwpc:10130 a skos:Concept;
   dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C43433&key=n1963439227&b=1&n=null>;
   skos:broader zonmwpc:10128;
   skos:definition "A usually 2-dimensional diagrammatic representation of an object or area."@en;
-  skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C43433>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C43433&key=n1963439227&b=1&n=null>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "map"@en .
 
@@ -821,15 +821,15 @@ zonmwpc:10133 a skos:Concept;
   dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C54273&key=1753678631&b=1&n=null>;
   skos:broader zonmwpc:10132;
   skos:definition "A visual representation of an object, scene, person or abstraction."@en;
-  skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C54273&jump_to_nav=true>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C54273&key=1753678631&b=1&n=null>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "picture"@en .
 
 zonmwpc:10134 a skos:Concept;
-  dct:source ":https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C91063"@en;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C91063>;
   skos:broader zonmwpc:10132;
   skos:definition "The storing or preserving of video images to be displayed later."@en;
-  skos:exactMatch <https://bioportal.bioontology.org/ontologies/NCIT/?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C96985&jump_to_nav=true>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C91063>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "video recording"@en .
 
@@ -916,7 +916,7 @@ zonmwpc:10146 a skos:Concept;
   skos:prefLabel "human"@en .
 
 zonmwpc:10147 a skos:Concept;
-  dct:source "MeSH"@en;
+  dct:source <http://purl.bioontology.org/ontology/MESH/D008907>;
   skos:broader zonmwpc:10145;
   skos:definition "Carnivores of genus Mustela of the family MUSTELIDAE. The European mink, which has white upper and lower lips, was widely trapped for commercial purposes and is classified as endangered. The American mink, lacking a white upper lip, is farmed commercially."@en;
   skos:exactMatch <http://purl.bioontology.org/ontology/MESH/D008907>;
@@ -924,39 +924,39 @@ zonmwpc:10147 a skos:Concept;
   skos:prefLabel "mink"@en .
 
 zonmwpc:10148 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C14238>;
   skos:broader zonmwpc:10145;
   skos:definition "Any of numerous species of small rodents belonging to the genus Mus and various related genera of the family Muridae."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14238>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C14238>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "mouse"@en .
 
 zonmwpc:10149 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C160998>;
   skos:broader zonmwpc:10145;
   skos:definition "Any of numerous species of rodents belonging to the genus Rattus and/or various related genera of the family Muridae."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C160998>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C160998>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "rat"@en .
 
 zonmwpc:10150 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C14283>;
   skos:broader zonmwpc:10145;
   skos:definition "An infectious agent which consists of two parts, genetic material and a protein coat. These organisms lack independent metabolism, and they must infect the cells of other types of organisms to reproduce. Most viruses are capable of passing through fine filters that retain bacteria, and are not visible through a light microscope."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14283>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C14283>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "virus"@en .
 
 zonmwpc:10151 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C14187>;
   skos:broader zonmwpc:10145;
   skos:definition "Unicellular, prokaryotic organisms that reproduce by cell division and usually have cell walls; can be shaped like spheres, rods or spirals and can be found in virtually any environment."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C14187>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C14187>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "bacteria"@en .
 
 zonmwpc:10152 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C28176>;
   skos:broader zonmwpc:10145;
   skos:definition "Any organism that has a close, symbiotic relationship with a separate, host organism."@en;
   skos:exactMatch <http://purl.obolibrary.org/obo/NCIT_C28176>;
@@ -964,7 +964,7 @@ zonmwpc:10152 a skos:Concept;
   skos:prefLabel "parasite"@en .
 
 zonmwpc:10153 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.02d&ns=ncit&code=C45306&key=n1938058024&b=1&n=null>;
   skos:broader zonmwpc:10144;
   skos:definition "Any matter of defined composition that has discrete existence, whose origin may be biological, mineral or chemical."@en;
   skos:exactMatch <https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.02d&ns=ncit&code=C45306&key=n1938058024&b=1&n=null>;
@@ -975,23 +975,23 @@ zonmwpc:10153 a skos:Concept;
   skos:prefLabel "substance"@en .
 
 zonmwpc:10154 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C12434>;
   skos:broader zonmwpc:10153;
   skos:definition "A liquid tissue; its major function is to transport oxygen throughout the body. It also supplies the tissues with nutrients, removes waste products, and contains various components of the immune system defending the body against infection. Several hormones also travel in the blood."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12434>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C12434>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "blood"@en .
 
 zonmwpc:10155 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C94552>;
   skos:broader zonmwpc:10153;
   skos:definition "The air that is inhaled and exhaled during respiration."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C94552>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C94552>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "breath"@en .
 
 zonmwpc:10156 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13234>;
   skos:broader zonmwpc:10153;
   skos:definition "The material discharged from the bowel during defecation. It consists of undigested food, intestinal mucus, epithelial cells, and bacteria."@en;
   skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13234\u000Ahttp://purl.bioontology.org/ontology/SNOMEDCT/39477002>;
@@ -999,121 +999,121 @@ zonmwpc:10156 a skos:Concept;
   skos:prefLabel "feces"@en .
 
 zonmwpc:10157 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13356>;
   skos:broader zonmwpc:10153;
   skos:definition "Plasma is the fluid (noncellular) portion of the circulating blood, as distinguished from the serum that is the fluid portion of the blood obtained by removal of the fibrin clot and blood cells after coagulation."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13356\u000Ahttp://purl.bioontology.org/ontology/SNOMEDCT/50863008>;
+  skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/50863008>, <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13356>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "plasma"@en .
 
 zonmwpc:10158 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13275>;
   skos:broader zonmwpc:10153;
   skos:definition "The watery fluid in the mouth made by the salivary glands. Saliva moistens food to help digestion and it helps protect the mouth against infections."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13275\u000Ahttp://purl.bioontology.org/ontology/SNOMEDCT/256897009>;
+  skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/256897009>, <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13275>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "saliva"@en .
 
 zonmwpc:10159 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13277>;
   skos:broader zonmwpc:10153;
   skos:definition "The thick, whitish secretion of the male reproductive organs. It is composed of spermatozoa in their nutrient plasma, secretions from the prostate, seminal vesicles, and various other glands, epithelial cells, and minor constituents."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13277>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13277>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "semen"@en .
 
 zonmwpc:10160 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CTT>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13325>;
   skos:broader zonmwpc:10153;
   skos:definition "The clear portion of the blood that remains after the removal of the blood cells and the clotting proteins."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13325>, <http://purl.bioontology.org/ontology/SNOMEDCT/67922002>;
+  skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/67922002>, <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13325>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "serum"@en .
 
 zonmwpc:10161 a skos:Concept;
-  dct:source "Ontobee"@en;
+  dct:source <http://purl.obolibrary.org/obo/ENVO_00002018>;
   skos:broader zonmwpc:10153;
   skos:definition "Wastewater that is contaminated with feces or urine"@en;
-  skos:exactMatch <http://purl.obolibrary.org/obo/ENVO_00002018;\u0020https://en.wikipedia.org/wiki/Sewage>;
+  skos:exactMatch <http://purl.obolibrary.org/obo/ENVO_00002018>, <https://en.wikipedia.org/wiki/Sewage>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "sewage"@en .
 
 zonmwpc:10162 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13278>;
   skos:broader zonmwpc:10153;
   skos:definition "Material containing mucus, cellular debris, microorganisms and sometimes blood or pus. It is ejected through the mouth from the lungs, bronchi, and trachea."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13278>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13278>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "sputum"@en .
 
 zonmwpc:10163 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C33739>;
   skos:broader zonmwpc:10153;
   skos:definition "A fluid containing oils, mucin, and proteins, which is secreted by the lacrimal gland and cleans and lubricates the eye."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C33739>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C33739>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "tear"@en .
 
 zonmwpc:10164 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C12801>;
   skos:broader zonmwpc:10153;
   skos:definition "An anatomical structure consisting of similarly specialized cells and intercellular matrix, aggregated according to genetically determined spatial relationships, performing a specific function."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12801>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C12801>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "tissue"@en .
 
 zonmwpc:10165 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13283>;
   skos:broader zonmwpc:10153;
   skos:definition "The fluid that is excreted by the kidneys. It is stored in the bladder and discharged through the urethra."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C13283>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C13283>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "urine"@en .
 
 zonmwpc:10166 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173496>;
   skos:broader zonmwpc:10153;
   skos:definition "A peripheral blood cell with a single nucleus. This category includes lymphocytes and monocytes."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C12954>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C173496>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "peripheral blood mononuclear cell"@en .
 
 zonmwpc:10167 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C28294>;
   skos:broader zonmwpc:10153;
   skos:definition "A group of materials of either plant, animal or artificial origin containing essential body nutrients that can be ingested by an organism to produce energy, stimulate growth, and maintain life."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C28294>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C28294>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "nutrition"@en .
 
 zonmwpc:10168 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C150892>;
   skos:broader zonmwpc:10153;
   skos:definition "The watery fluid, consisting of vulvar gland, endometrium, and oviduct secretions, cervical mucus, vaginal wall plasma transudate, exfoliated cells, and bacterial and immune cell products, that hydrates and forms an antimicrobial barrier for the mucosa of the lower female genital tract."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C150892>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C150892>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "cervicovaginal secretion"@en .
 
 zonmwpc:10169 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C19157>;
   skos:broader zonmwpc:10144;
   skos:definition "A part of a thing, or of several things, taken to demonstrate or to determine the character of the whole, e.g. a substance, or portion of material obtained for use in testing, examination, or study; particularly, a preparation of tissue or bodily fluid taken for examination or diagnosis."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C19157>, <http://purl.bioontology.org/ontology/SNOMEDCT/123038009>;
+  skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/123038009>, <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C19157>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10170, zonmwpc:10171, zonmwpc:10172, zonmwpc:10173, zonmwpc:10174,
     zonmwpc:10175, zonmwpc:10176, zonmwpc:10177, zonmwpc:10178, zonmwpc:10179;
   skos:prefLabel "specimen"@en .
 
 zonmwpc:10170 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C16403>;
   skos:broader zonmwpc:10169;
   skos:definition "A permanently established cell culture that will proliferate indefinitely given appropriate fresh medium and space."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16403>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C16403>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "cell lines"@en .
+  skos:prefLabel "cell line"@en .
 
 zonmwpc:10171 a skos:Concept;
-  dct:source "OBI"@en;
+  dct:source <http://purl.obolibrary.org/obo/OBI_0000971>;
   skos:broader zonmwpc:10169;
   skos:definition "a specimen that is output of a specimen creation process used for an investigation without storage."@en;
   skos:exactMatch <http://purl.obolibrary.org/obo/OBI_0000971>;
@@ -1121,7 +1121,7 @@ zonmwpc:10171 a skos:Concept;
   skos:prefLabel "fresh specimen"@en .
 
 zonmwpc:10172 a skos:Concept;
-  dct:source "OBI"@en;
+  dct:source <http://purl.obolibrary.org/obo/OBI_0000922>;
   skos:broader zonmwpc:10169;
   skos:definition "A specimen that has been frozen in order to store it."@en;
   skos:exactMatch <http://purl.obolibrary.org/obo/OBI_0000922>;
@@ -1129,15 +1129,15 @@ zonmwpc:10172 a skos:Concept;
   skos:prefLabel "frozen specimen"@en .
 
 zonmwpc:10173 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C132119>;
   skos:broader zonmwpc:10169;
-  skos:definition "A biospecimen collected from the nasal passages by swabbing."@en;
-  skos:exactMatch <http://purl.obolibrary.org/obo/NCIT_C155833>;
+  skos:definition "A method used to collect biological material from within the nasal passages. A cotton swab is inserted into the nasal opening and rotated against the anterior nasal mucosa and them withdrawn."@en;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C132119>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "nasal swab"@en .
 
 zonmwpc:10174 a skos:Concept;
-  dct:source "Ontology for Biomedical Investigations"@en;
+  dct:source <http://purl.obolibrary.org/obo/IAO_0000122>;
   skos:broader zonmwpc:10169;
   skos:definition "A specimen that is collected with a swab from the surface of a nasopharynx."@en;
   skos:exactMatch <http://purl.obolibrary.org/obo/IAO_0000122>;
@@ -1145,23 +1145,23 @@ zonmwpc:10174 a skos:Concept;
   skos:prefLabel "nasopharyngeal swab specimen"@en .
 
 zonmwpc:10175 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C155835>;
   skos:broader zonmwpc:10169;
   skos:definition "A biospecimen collected from the oropharynx by swabbing."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C155835>, <http://purl.bioontology.org/ontology/SNOMEDCT/258529004>,
-    <http://purl.bioontology.org/ontology/SNOMEDCT/461911000124106>;
+  skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/258529004>, <http://purl.bioontology.org/ontology/SNOMEDCT/461911000124106>,
+    <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C155835>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "oropharyngeal swab specimen"@en .
 
 zonmwpc:10176 a skos:Concept;
-  dct:source "SNOMED-CT"@en;
+  dct:source <http://purl.bioontology.org/ontology/SNOMEDCT/119376003>;
   skos:broader zonmwpc:10169;
   skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/119376003>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "tissue specimen"@en .
 
 zonmwpc:10177 a skos:Concept;
-  dct:source "OBI"@en;
+  dct:source <http://purl.obolibrary.org/obo/OBI_0002611>;
   skos:broader zonmwpc:10169;
   skos:definition "A specimen that is collected with a swab from the surface of a vagina."@en;
   skos:exactMatch <http://purl.obolibrary.org/obo/OBI_0002611>;
@@ -1169,71 +1169,69 @@ zonmwpc:10177 a skos:Concept;
   skos:prefLabel "Vaginal swab specimen"@en .
 
 zonmwpc:10178 a skos:Concept;
-  dct:source "SNOMED-CT"@en;
+  dct:source <http://purl.obolibrary.org/obo/OBI_1200000>;
   skos:broader zonmwpc:10169;
   skos:definition "A specimen that has been fixed in formalin and embedded in paraffin."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/OBI_1200000>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "FFPE tissue specimen"@en .
 
 zonmwpc:10179 a skos:Concept;
-  dct:source "FBbi"@en;
   skos:broader zonmwpc:10169;
-  skos:definition "glutaraldehyde fixed tissue"@en;
-  skos:exactMatch <http://purl.obolibrary.org/obo/OBI_1200000>;
+  skos:exactMatch <http://purl.obolibrary.org/obo/FBbi_00000011>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "glutaraldehyde fixed tissue specimen"@en .
 
 zonmwpc:10180 a skos:Concept;
   skos:broader zonmwpc:10144;
-  skos:exactMatch <http://purl.obolibrary.org/obo/FBbi_00000011>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10181, zonmwpc:10182, zonmwpc:10183, zonmwpc:10184, zonmwpc:10185;
   skos:prefLabel "macromolecule"@en .
 
 zonmwpc:10181 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C324>;
   skos:broader zonmwpc:10180;
   skos:definition "Single-stranded DNA that is complementary to messenger RNA or DNA that has been synthesized from messenger RNA by reverse transcriptase."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C324>;
+  skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C324>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "cDNA"@en .
 
 zonmwpc:10182 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C449>;
   skos:broader zonmwpc:10180;
   skos:definition "A long linear double-stranded polymer formed from nucleotides attached to a deoxyribose backbone and found in the nucleus of a cell; associated with the transmission of genetic information."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C449\u000Ahttp://purl.bioontology.org/ontology/SNOMEDCT/24851008>;
+  skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/24851008>, <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C449>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "DNA"@en .
 
 zonmwpc:10183 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C812>;
   skos:broader zonmwpc:10180;
   skos:definition "Single-stranded long chain of nucleotides containing ribose. It is the end product of DNA transcription by the enzyme RNA polymerase. It is essential in protein synthesis."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C812>, <http://purl.bioontology.org/ontology/SNOMEDCT/27888000>;
+  skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/27888000>, <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C812>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "RNA"@en .
 
 zonmwpc:10184 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C17021>;
   skos:broader zonmwpc:10180;
   skos:definition "A group of complex organic macromolecules composed of one or more chains (linear polymers) of alpha-L-amino acids linked by peptide bonds and ranging in size from a few thousand to over 1 million Daltons. Proteins are fundamental genetically encoded components of living cells with specific structures and functions dictated by amino acid sequence."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C17021\u000Ahttp://purl.bioontology.org/ontology/SNOMEDCT/88878007>;
+  skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/88878007>, <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C17021>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "protein"@en .
 
 zonmwpc:10185 a skos:Concept;
-  dct:source <https://ncithesaurus.nci.nih.gov\u000ASNOMED-CT>;
+  dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C16295>;
   skos:broader zonmwpc:10180;
   skos:definition "A type of protein made by B lymphocytes in response to a foreign substance (antigen). Each antibody only binds to a specific antigen, helping to destroy the antigen directly or by assisting white blood cells to destroy the antigen."@en;
-  skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C16295\u000Ahttp://purl.bioontology.org/ontology/SNOMEDCT/68498002>;
+  skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/68498002>, <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C16295>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "antibody"@en .
 
 zonmwpc:10186 a skos:Concept;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:narrower zonmwpc:10187, zonmwpc:10209, zonmwpc:10210, zonmwpc:10211, zonmwpc:10212,
-    zonmwpc:10213;
+  skos:narrower zonmwpc:10187, zonmwpc:10208, zonmwpc:10209, zonmwpc:10210, zonmwpc:10211,
+    zonmwpc:10212;
   skos:prefLabel "services"@en;
   skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
 
@@ -1243,26 +1241,30 @@ zonmwpc:10187 a skos:Concept;
   skos:narrower zonmwpc:10188, zonmwpc:10189, zonmwpc:10190, zonmwpc:10191, zonmwpc:10192,
     zonmwpc:10193, zonmwpc:10194, zonmwpc:10195, zonmwpc:10196, zonmwpc:10197, zonmwpc:10198,
     zonmwpc:10199, zonmwpc:10200, zonmwpc:10201, zonmwpc:10202, zonmwpc:10203, zonmwpc:10204,
-    zonmwpc:10205, zonmwpc:10206, zonmwpc:10207, zonmwpc:10208;
+    zonmwpc:10205, zonmwpc:10206, zonmwpc:10207;
   skos:prefLabel "laboratory services"@en .
 
 zonmwpc:10188 a skos:Concept;
+  dct:source <https://www.utwente.nl/.uc/fb9dbdab80102e9e99b00eeb5220284e61d13c337a78900/short-manual-gmo.pdf>;
   skos:broader zonmwpc:10187;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "ML-1 laboratory"@en .
 
 zonmwpc:10189 a skos:Concept;
+  dct:source <https://www.utwente.nl/.uc/fb9dbdab80102e9e99b00eeb5220284e61d13c337a78900/short-manual-gmo.pdf>;
   skos:broader zonmwpc:10187;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "ML-2 laboratory"@en .
 
 zonmwpc:10190 a skos:Concept;
+  dct:source <https://www.utwente.nl/.uc/fb9dbdab80102e9e99b00eeb5220284e61d13c337a78900/short-manual-gmo.pdf>;
   skos:broader zonmwpc:10187;
   skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/409600007>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "ML-3 laboratory"@en .
 
 zonmwpc:10191 a skos:Concept;
+  dct:source <https://www.labmanager.com/lab-health-and-safety/biosafety-levels-1-2-3-4-19123>;
   skos:broader zonmwpc:10187;
   skos:definition "Biosafety level one, the lowest level, applies to work with agents that usually pose a minimal potential threat to laboratory workers and the environment and do not consistently cause disease in healthy adults."@en;
   skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/409603009>;
@@ -1270,6 +1272,7 @@ zonmwpc:10191 a skos:Concept;
   skos:prefLabel "BSL-1 laboratory"@en .
 
 zonmwpc:10192 a skos:Concept;
+  dct:source <https://www.labmanager.com/lab-health-and-safety/biosafety-levels-1-2-3-4-19123>;
   skos:broader zonmwpc:10187;
   skos:definition """Biosafety level two would cover work with agents associated with human 
 disease, in other words, pathogenic or infectious organisms posing a 
@@ -1279,6 +1282,7 @@ moderate hazard."""@en;
   skos:prefLabel "BSL-2 laboratory"@en .
 
 zonmwpc:10193 a skos:Concept;
+  dct:source <https://www.labmanager.com/lab-health-and-safety/biosafety-levels-1-2-3-4-19123>;
   skos:broader zonmwpc:10187;
   skos:definition "Yellow fever, St. Louis encephalitis and West Nile virus are examples of agents requiring biosafety level 3 practices and containment. Work with these agents is strictly controlled and must be registered with all appropriate government agencies."@en;
   skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/409605002>;
@@ -1286,6 +1290,7 @@ zonmwpc:10193 a skos:Concept;
   skos:prefLabel "BSL-3 laboratory"@en .
 
 zonmwpc:10194 a skos:Concept;
+  dct:source <https://www.labmanager.com/lab-health-and-safety/biosafety-levels-1-2-3-4-19123>;
   skos:broader zonmwpc:10187;
   skos:definition "Agents requiring BSL 4 facilities and practices are extremely dangerous pand pose a high risk of life-threatening disease. Examples are the Ebola virus, the Lassa virus, and any agent with unknown risks of pathogenicity and transmission."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
@@ -1306,7 +1311,7 @@ zonmwpc:10197 a skos:Concept;
   skos:broader zonmwpc:10187;
   skos:definition "complete analytical platform, coupled to advanced extraction techniques, sample prep methods and vast experience, allows to offer non-targetted or targetted metabolomic studies, metabolomic fingerprinting or footprinting studies"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "Metabolomics facility"@en .
+  skos:prefLabel "metabolomics facility"@en .
 
 zonmwpc:10198 a skos:Concept;
   skos:broader zonmwpc:10187;
@@ -1366,31 +1371,26 @@ zonmwpc:10207 a skos:Concept;
   skos:prefLabel "pharmacy"@en .
 
 zonmwpc:10208 a skos:Concept;
-  skos:broader zonmwpc:10187;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "metabolomics facility"@en .
-
-zonmwpc:10209 a skos:Concept;
   skos:broader zonmwpc:10186;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "repository"@en .
 
-zonmwpc:10210 a skos:Concept;
+zonmwpc:10209 a skos:Concept;
   skos:broader zonmwpc:10186;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "biobank"@en .
 
-zonmwpc:10211 a skos:Concept;
+zonmwpc:10210 a skos:Concept;
   skos:broader zonmwpc:10186;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "data catalogue"@en .
 
-zonmwpc:10212 a skos:Concept;
+zonmwpc:10211 a skos:Concept;
   skos:broader zonmwpc:10186;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "ELSI service"@en .
 
-zonmwpc:10213 a skos:Concept;
+zonmwpc:10212 a skos:Concept;
   skos:broader zonmwpc:10186;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "other online service"@en .
