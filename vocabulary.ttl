@@ -25,10 +25,10 @@
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "ZonMW Project Content Vocabulary"@en;
   pav:createdOn "2021-02-08T15:00:00+00:00"@en;
-  pav:lastUpdatedOn "2021-04-07T10:00:00+00:00"@en;
+  pav:lastUpdatedOn "2021-04-07T21:00:00+00:00"@en;
   pav:version "1.0.0"@en;
   skos:hasTopConcept zonmwpc:10000, zonmwpc:10001, zonmwpc:10017, zonmwpc:10037, zonmwpc:10107,
-    zonmwpc:10144, zonmwpc:10186;
+    zonmwpc:10144, zonmwpc:10186, zonmwpc:10213;
   skos:prefLabel "ZonMW Project Content Vocabulary"@en .
 
 zonmwpc:10000 a skos:Concept;
@@ -1394,3 +1394,40 @@ zonmwpc:10212 a skos:Concept;
   skos:broader zonmwpc:10186;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "other online service"@en .
+
+zonmwpc:10213 a skos:Concept;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10214, zonmwpc:10215, zonmwpc:10216, zonmwpc:10217, zonmwpc:10218,
+    zonmwpc:10219;
+  skos:prefLabel "standard"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
+
+zonmwpc:10214 a skos:Concept;
+  skos:broader zonmwpc:10213;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "metadata standard"@en .
+
+zonmwpc:10215 a skos:Concept;
+  skos:broader zonmwpc:10213;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "semantic artefact"@en .
+
+zonmwpc:10216 a skos:Concept;
+  skos:broader zonmwpc:10213;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "technical standard"@en .
+
+zonmwpc:10217 a skos:Concept;
+  skos:broader zonmwpc:10213;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "conceptual model"@en .
+
+zonmwpc:10218 a skos:Concept;
+  skos:broader zonmwpc:10213;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "guideline"@en .
+
+zonmwpc:10219 a skos:Concept;
+  skos:broader zonmwpc:10213;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "framework"@en .

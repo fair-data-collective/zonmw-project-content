@@ -13,7 +13,7 @@ dct:contributor,https://orcid.org/0000-0002-7160-5942
 dct:rights,https://spdx.org/licenses/CC0-1.0 
 pav:version,1.0.0
 pav:createdOn,2021-02-08T15:00:00+00:00
-pav:lastUpdatedOn,2021-04-07T10:00:00+00:00
+pav:lastUpdatedOn,2021-04-07T21:00:00+00:00
 
 
 
@@ -258,3 +258,10 @@ zonmwpc:10209,biobank,,,,zonmwpc:10186
 zonmwpc:10210,data catalogue,,,,zonmwpc:10186
 zonmwpc:10211,ELSI service,,,,zonmwpc:10186
 zonmwpc:10212,other online service,,,,zonmwpc:10186
+zonmwpc:10213,standard 
+zonmwpc:10214,metadata standard,,,,zonmwpc:10213
+zonmwpc:10215,semantic artefact,,,,zonmwpc:10213
+zonmwpc:10216,technical standard,,,,zonmwpc:10213
+zonmwpc:10217,conceptual model,,,,zonmwpc:10213
+zonmwpc:10218,guideline,,,,zonmwpc:10213
+zonmwpc:10219,framework,,,,zonmwpc:10213
