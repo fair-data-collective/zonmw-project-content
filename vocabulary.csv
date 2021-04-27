@@ -11,9 +11,9 @@ dct:creator,https://orcid.org/0000-0003-2195-3997
 dct:contributor,https://orcid.org/0000-0002-9381-9693 
 dct:contributor,https://orcid.org/0000-0002-7160-5942
 dct:rights,https://spdx.org/licenses/CC0-1.0 
-pav:version,1.0.0
+pav:version,1.0.2
 pav:createdOn,2021-02-08T15:00:00+00:00
-pav:lastUpdatedOn,2021-04-07T21:00:00+00:00
+pav:lastUpdatedOn,2021-04-27T22:00:00+00:00
 
 
 
@@ -34,7 +34,7 @@ zonmwpc:10008,international,,,,zonmwpc:10002
 zonmwpc:10009,care setting,,,,zonmwpc:10001
 zonmwpc:10010,home care,,,,zonmwpc:10009
 zonmwpc:10011,transmural,,,,zonmwpc:10009
-zonmwpc:10012,GP care,,,,zonmwpc:10009
+zonmwpc:10012,GP care,general practitioner care,,,zonmwpc:10009
 zonmwpc:10013,nursing home care,,,,zonmwpc:10009
 zonmwpc:10014,hospital care,,,,zonmwpc:10009
 zonmwpc:10015,informal care,,,,zonmwpc:10009
@@ -60,7 +60,7 @@ zonmwpc:10034,first wave,,,,zonmwpc:10033
 zonmwpc:10035,second wave,,,,zonmwpc:10033
 zonmwpc:10036,third wave,,,,zonmwpc:10033
 zonmwpc:10037,population group
-zonmwpc:10038,people after age,,,,zonmwpc:10037
+zonmwpc:10038,people by age,,,,zonmwpc:10037
 zonmwpc:10039,prematures,,less then 37 weeks gestational outcome,,zonmwpc:10038
 zonmwpc:10040,newborns,,37 or more weeks gestational outcome,,zonmwpc:10038
 zonmwpc:10041,neonates,,0-3 months,,zonmwpc:10038
@@ -73,25 +73,25 @@ zonmwpc:10047,young adults,,18-21 years,,zonmwpc:10038
 zonmwpc:10048,adults,,18-65 years,,zonmwpc:10038
 zonmwpc:10049,elderly,,65-80 years,,zonmwpc:10038,,https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.02d&ns=ncit&code=C16268&key=162882687&b=1&n=null
 zonmwpc:10050,very elderly,,more than 80 years,,zonmwpc:10038
-zonmwpc:10051,people after sex,,"grouping specifying the determination of an infant's sex shortly after birth
+zonmwpc:10051,people by sex,,"grouping specifying the determination of an infant's sex shortly after birth
 ",,zonmwpc:10037
 zonmwpc:10052,male,,,,zonmwpc:10051
-zonmwpc:10053,female,,,,zonmwpc:10052
-zonmwpc:10054,intersex,,,,zonmwpc:10053
-zonmwpc:10055,people after gender,,"grouping on basis of person's sense of self as a member of a particular gender
+zonmwpc:10053,female,,,,zonmwpc:10051
+zonmwpc:10054,intersex,,,,zonmwpc:10051
+zonmwpc:10055,people by gender,,"grouping on basis of person's sense of self as a member of a particular gender
 ",,zonmwpc:10037
 zonmwpc:10056,man,,,,zonmwpc:10055
 zonmwpc:10057,woman,,,,zonmwpc:10055
 zonmwpc:10058,non-binary,,,,zonmwpc:10055
 zonmwpc:10059,not specified,,,,zonmwpc:10055
-zonmwpc:10060,people after education,,,,zonmwpc:10037
+zonmwpc:10060,people by education,,,,zonmwpc:10037
 zonmwpc:10061,preschooler,,,,zonmwpc:10060
 zonmwpc:10062,daycare child,,,,zonmwpc:10060
 zonmwpc:10063,primary school student,,,,zonmwpc:10060
 zonmwpc:10064,secondary school student,,,,zonmwpc:10060
 zonmwpc:10065,vocational school student,,,,zonmwpc:10060
 zonmwpc:10066,university student,,,,zonmwpc:10060
-zonmwpc:10067,people after employment,,,,zonmwpc:10037
+zonmwpc:10067,people by employment,,,,zonmwpc:10037
 zonmwpc:10068,individual with low socio-economic status,,,,zonmwpc:10067
 zonmwpc:10069,individual with high socio-economic status,,,,zonmwpc:10067
 zonmwpc:10070,employed person,,,,zonmwpc:10067
@@ -107,7 +107,7 @@ zonmwpc:10079,statushouder,,,,zonmwpc:10077
 zonmwpc:10080,asylum seeker,,,,zonmwpc:10077
 zonmwpc:10081,undocumented migrant,,,,zonmwpc:10077
 zonmwpc:10082,season labour migrant,,,,zonmwpc:10077
-zonmwpc:10083,people after COVID-19 risk factors,,,,zonmwpc:10037
+zonmwpc:10083,people by COVID-19 risk factors,,,,zonmwpc:10037
 zonmwpc:10084,individual with a chronic illness,,,,zonmwpc:10083
 zonmwpc:10085,individual with underlying disease(s),,,,zonmwpc:10083
 zonmwpc:10086,patient with (covid-19 associated) thrombosis,,,,zonmwpc:10083
@@ -115,13 +115,13 @@ zonmwpc:10087,individual with obesity,,,,zonmwpc:10083
 zonmwpc:10088,patient using anticoagulants,,,,zonmwpc:10083
 zonmwpc:10089,surgical patient,,,,zonmwpc:10083
 zonmwpc:10090,blood donor,,,,zonmwpc:10083
-zonmwpc:10091,COVID-19 related grouping,,,,zonmwpc:10037
+zonmwpc:10091,COVID-19 patient grouping,,,,zonmwpc:10037
 zonmwpc:10092,hospitalised covid-19 patient,,,,zonmwpc:10091
 zonmwpc:10093,non-hospitalised covid-19 patient,,,,zonmwpc:10091
 zonmwpc:10094,long-covid-19 patient,,,,zonmwpc:10091
 zonmwpc:10095,Individual after first infection,,,,zonmwpc:10091
-zonmwpc:10096,individual  with sars-cov-2 vaccination,,,,zonmwpc:10091
-zonmwpc:10097,individual refusing sars-cov-2 vaccination,,,,zonmwpc:10091
+zonmwpc:10096,individual  with sars-cov-2 vaccination,,,,zonmwpc:10220
+zonmwpc:10097,individual refusing sars-cov-2 vaccination,,,,zonmwpc:10220
 zonmwpc:10098,target group of policy interventions,,,,zonmwpc:10037
 zonmwpc:10099,homeless,,,,zonmwpc:10098
 zonmwpc:10100,victim of domestic violence,,,,zonmwpc:10098
@@ -216,14 +216,14 @@ zonmwpc:10175,oropharyngeal swab specimen,,A biospecimen collected from the orop
 http://purl.bioontology.org/ontology/SNOMEDCT/461911000124106,
 http://purl.bioontology.org/ontology/SNOMEDCT/258529004"
 zonmwpc:10176,tissue specimen,,,http://purl.bioontology.org/ontology/SNOMEDCT/119376003,zonmwpc:10169,,http://purl.bioontology.org/ontology/SNOMEDCT/119376003
-zonmwpc:10177,Vaginal swab specimen,,A specimen that is collected with a swab from the surface of a vagina.,http://purl.obolibrary.org/obo/OBI_0002611,zonmwpc:10169,,http://purl.obolibrary.org/obo/OBI_0002611
+zonmwpc:10177,vaginal swab specimen,,A specimen that is collected with a swab from the surface of a vagina.,http://purl.obolibrary.org/obo/OBI_0002611,zonmwpc:10169,,http://purl.obolibrary.org/obo/OBI_0002611
 zonmwpc:10178,FFPE tissue specimen,,A specimen that has been fixed in formalin and embedded in paraffin.,http://purl.obolibrary.org/obo/OBI_1200000,zonmwpc:10169,,http://purl.obolibrary.org/obo/OBI_1200000
 zonmwpc:10179,glutaraldehyde fixed tissue specimen,,,,zonmwpc:10169,,http://purl.obolibrary.org/obo/FBbi_00000011
 zonmwpc:10180,macromolecule,,,,zonmwpc:10144
 zonmwpc:10181,cDNA,,Single-stranded DNA that is complementary to messenger RNA or DNA that has been synthesized from messenger RNA by reverse transcriptase.,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C324,zonmwpc:10180,,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C324
-zonmwpc:10182,DNA,,A long linear double-stranded polymer formed from nucleotides attached to a deoxyribose backbone and found in the nucleus of a cell; associated with the transmission of genetic information.,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C449,zonmwpc:10180,,"https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C449,
+zonmwpc:10182,DNA,deoxyribonucleic acid,A long linear double-stranded polymer formed from nucleotides attached to a deoxyribose backbone and found in the nucleus of a cell; associated with the transmission of genetic information.,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C449,zonmwpc:10180,,"https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C449,
 http://purl.bioontology.org/ontology/SNOMEDCT/24851008"
-zonmwpc:10183,RNA,,Single-stranded long chain of nucleotides containing ribose. It is the end product of DNA transcription by the enzyme RNA polymerase. It is essential in protein synthesis.,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C812,zonmwpc:10180,,"https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C812,
+zonmwpc:10183,RNA,ribonucleic acid,Single-stranded long chain of nucleotides containing ribose. It is the end product of DNA transcription by the enzyme RNA polymerase. It is essential in protein synthesis.,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C812,zonmwpc:10180,,"https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C812,
 http://purl.bioontology.org/ontology/SNOMEDCT/27888000"
 zonmwpc:10184,protein,,A group of complex organic macromolecules composed of one or more chains (linear polymers) of alpha-L-amino acids linked by peptide bonds and ranging in size from a few thousand to over 1 million Daltons. Proteins are fundamental genetically encoded components of living cells with specific structures and functions dictated by amino acid sequence.,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C17021,zonmwpc:10180,,"https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C17021,
 http://purl.bioontology.org/ontology/SNOMEDCT/88878007"
@@ -265,3 +265,4 @@ zonmwpc:10216,technical standard,,,,zonmwpc:10213
 zonmwpc:10217,conceptual model,,,,zonmwpc:10213
 zonmwpc:10218,guideline,,,,zonmwpc:10213
 zonmwpc:10219,framework,,,,zonmwpc:10213
+zonmwpc:10220,COVID-19 vaccination grouping,,,,zonmwpc:10037

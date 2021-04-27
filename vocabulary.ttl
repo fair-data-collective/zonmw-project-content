@@ -25,8 +25,8 @@
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "ZonMW Project Content Vocabulary"@en;
   pav:createdOn "2021-02-08T15:00:00+00:00"@en;
-  pav:lastUpdatedOn "2021-04-07T21:00:00+00:00"@en;
-  pav:version "1.0.0"@en;
+  pav:lastUpdatedOn "2021-04-27T22:00:00+00:00"@en;
+  pav:version "1.0.2"@en;
   skos:hasTopConcept zonmwpc:10000, zonmwpc:10001, zonmwpc:10017, zonmwpc:10037, zonmwpc:10107,
     zonmwpc:10144, zonmwpc:10186, zonmwpc:10213;
   skos:prefLabel "ZonMW Project Content Vocabulary"@en .
@@ -98,6 +98,7 @@ zonmwpc:10011 a skos:Concept;
   skos:prefLabel "transmural"@en .
 
 zonmwpc:10012 a skos:Concept;
+  skos:altLabel "general practitioner care"@en;
   skos:broader zonmwpc:10009;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "GP care"@en .
@@ -239,7 +240,7 @@ zonmwpc:10036 a skos:Concept;
 zonmwpc:10037 a skos:Concept;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10038, zonmwpc:10051, zonmwpc:10055, zonmwpc:10060, zonmwpc:10067,
-    zonmwpc:10077, zonmwpc:10083, zonmwpc:10091, zonmwpc:10098;
+    zonmwpc:10077, zonmwpc:10083, zonmwpc:10091, zonmwpc:10098, zonmwpc:10220;
   skos:prefLabel "population group"@en;
   skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
 
@@ -249,7 +250,7 @@ zonmwpc:10038 a skos:Concept;
   skos:narrower zonmwpc:10039, zonmwpc:10040, zonmwpc:10041, zonmwpc:10042, zonmwpc:10043,
     zonmwpc:10044, zonmwpc:10045, zonmwpc:10046, zonmwpc:10047, zonmwpc:10048, zonmwpc:10049,
     zonmwpc:10050;
-  skos:prefLabel "people after age"@en .
+  skos:prefLabel "people by age"@en .
 
 zonmwpc:10039 a skos:Concept;
   skos:broader zonmwpc:10038;
@@ -328,23 +329,21 @@ zonmwpc:10051 a skos:Concept;
   skos:broader zonmwpc:10037;
   skos:definition "grouping specifying the determination of an infant's sex shortly after birth"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:narrower zonmwpc:10052;
-  skos:prefLabel "people after sex"@en .
+  skos:narrower zonmwpc:10052, zonmwpc:10053, zonmwpc:10054;
+  skos:prefLabel "people by sex"@en .
 
 zonmwpc:10052 a skos:Concept;
   skos:broader zonmwpc:10051;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:narrower zonmwpc:10053;
   skos:prefLabel "male"@en .
 
 zonmwpc:10053 a skos:Concept;
-  skos:broader zonmwpc:10052;
+  skos:broader zonmwpc:10051;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:narrower zonmwpc:10054;
   skos:prefLabel "female"@en .
 
 zonmwpc:10054 a skos:Concept;
-  skos:broader zonmwpc:10053;
+  skos:broader zonmwpc:10051;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "intersex"@en .
 
@@ -353,7 +352,7 @@ zonmwpc:10055 a skos:Concept;
   skos:definition "grouping on basis of person's sense of self as a member of a particular gender"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10056, zonmwpc:10057, zonmwpc:10058, zonmwpc:10059;
-  skos:prefLabel "people after gender"@en .
+  skos:prefLabel "people by gender"@en .
 
 zonmwpc:10056 a skos:Concept;
   skos:broader zonmwpc:10055;
@@ -380,7 +379,7 @@ zonmwpc:10060 a skos:Concept;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10061, zonmwpc:10062, zonmwpc:10063, zonmwpc:10064, zonmwpc:10065,
     zonmwpc:10066;
-  skos:prefLabel "people after education"@en .
+  skos:prefLabel "people by education"@en .
 
 zonmwpc:10061 a skos:Concept;
   skos:broader zonmwpc:10060;
@@ -417,7 +416,7 @@ zonmwpc:10067 a skos:Concept;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10068, zonmwpc:10069, zonmwpc:10070, zonmwpc:10071, zonmwpc:10072,
     zonmwpc:10073, zonmwpc:10074, zonmwpc:10075, zonmwpc:10076;
-  skos:prefLabel "people after employment"@en .
+  skos:prefLabel "people by employment"@en .
 
 zonmwpc:10068 a skos:Concept;
   skos:broader zonmwpc:10067;
@@ -500,7 +499,7 @@ zonmwpc:10083 a skos:Concept;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10084, zonmwpc:10085, zonmwpc:10086, zonmwpc:10087, zonmwpc:10088,
     zonmwpc:10089, zonmwpc:10090;
-  skos:prefLabel "people after COVID-19 risk factors"@en .
+  skos:prefLabel "people by COVID-19 risk factors"@en .
 
 zonmwpc:10084 a skos:Concept;
   skos:broader zonmwpc:10083;
@@ -540,9 +539,8 @@ zonmwpc:10090 a skos:Concept;
 zonmwpc:10091 a skos:Concept;
   skos:broader zonmwpc:10037;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:narrower zonmwpc:10092, zonmwpc:10093, zonmwpc:10094, zonmwpc:10095, zonmwpc:10096,
-    zonmwpc:10097;
-  skos:prefLabel "COVID-19 related grouping"@en .
+  skos:narrower zonmwpc:10092, zonmwpc:10093, zonmwpc:10094, zonmwpc:10095;
+  skos:prefLabel "COVID-19 patient grouping"@en .
 
 zonmwpc:10092 a skos:Concept;
   skos:broader zonmwpc:10091;
@@ -565,12 +563,12 @@ zonmwpc:10095 a skos:Concept;
   skos:prefLabel "Individual after first infection"@en .
 
 zonmwpc:10096 a skos:Concept;
-  skos:broader zonmwpc:10091;
+  skos:broader zonmwpc:10220;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "individual with sars-cov-2 vaccination"@en .
 
 zonmwpc:10097 a skos:Concept;
-  skos:broader zonmwpc:10091;
+  skos:broader zonmwpc:10220;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "individual refusing sars-cov-2 vaccination"@en .
 
@@ -1166,7 +1164,7 @@ zonmwpc:10177 a skos:Concept;
   skos:definition "A specimen that is collected with a swab from the surface of a vagina."@en;
   skos:exactMatch <http://purl.obolibrary.org/obo/OBI_0002611>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "Vaginal swab specimen"@en .
+  skos:prefLabel "vaginal swab specimen"@en .
 
 zonmwpc:10178 a skos:Concept;
   dct:source <http://purl.obolibrary.org/obo/OBI_1200000>;
@@ -1198,6 +1196,7 @@ zonmwpc:10181 a skos:Concept;
 
 zonmwpc:10182 a skos:Concept;
   dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C449>;
+  skos:altLabel "deoxyribonucleic acid"@en;
   skos:broader zonmwpc:10180;
   skos:definition "A long linear double-stranded polymer formed from nucleotides attached to a deoxyribose backbone and found in the nucleus of a cell; associated with the transmission of genetic information."@en;
   skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/24851008>, <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C449>;
@@ -1206,6 +1205,7 @@ zonmwpc:10182 a skos:Concept;
 
 zonmwpc:10183 a skos:Concept;
   dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C812>;
+  skos:altLabel "ribonucleic acid"@en;
   skos:broader zonmwpc:10180;
   skos:definition "Single-stranded long chain of nucleotides containing ribose. It is the end product of DNA transcription by the enzyme RNA polymerase. It is essential in protein synthesis."@en;
   skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/27888000>, <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C812>;
@@ -1431,3 +1431,9 @@ zonmwpc:10219 a skos:Concept;
   skos:broader zonmwpc:10213;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "framework"@en .
+
+zonmwpc:10220 a skos:Concept;
+  skos:broader zonmwpc:10037;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10096, zonmwpc:10097;
+  skos:prefLabel "COVID-19 vaccination grouping"@en .
