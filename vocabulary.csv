@@ -11,9 +11,9 @@ dct:creator,https://orcid.org/0000-0003-2195-3997
 dct:contributor,https://orcid.org/0000-0002-9381-9693 
 dct:contributor,https://orcid.org/0000-0002-7160-5942
 dct:rights,https://spdx.org/licenses/CC0-1.0 
-pav:version,1.0.2
+pav:version,1.0.3
 pav:createdOn,2021-02-08T15:00:00+00:00
-pav:lastUpdatedOn,2021-04-27T22:00:00+00:00
+pav:lastUpdatedOn,2021-05-07T20:40:00+00:00
 
 
 
@@ -154,9 +154,9 @@ zonmwpc:10120,X-ray imaging,X-ray,An image of the structure penetrated by the ra
 zonmwpc:10121,ultrasound,,"High frequency sound, generally with a frequency greater than 20,000 Hz.",https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C64384&key=168018700&b=1&n=null,zonmwpc:10118,,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C64384&key=168018700&b=1&n=null
 zonmwpc:10122,computed tomography ,CT,A method of examining structures within the body by scanning them with X rays and using a computer to construct a series of cross-sectional scans along a single axis.,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C17204&key=1418861988&b=1&n=null,zonmwpc:10118,,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C17204&key=1418861988&b=1&n=null
 zonmwpc:10123,infrared thermography,,"In medicine, a procedure in which an infrared camera (one that senses heat) is used to measure temperature differences on the surface of the body. The camera makes pictures that show areas of possible abnormal cell growth because abnormal tissue gives off more heat than normal tissue does.",https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C62663,zonmwpc:10118,,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C62663
-zonmwpc:10124,societal data,,,,zonmwpc:10107
-zonmwpc:10125,survey data,,A data set that contains the outcome of a survey.,,zonmwpc:10118,,http://purl.obolibrary.org/obo/OMIABIS_0000060
-zonmwpc:10126,COVID policy and prevention measures,,,,zonmwpc:10118,https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C15843
+zonmwpc:10124,social data,,,,zonmwpc:10107
+zonmwpc:10125,survey data,,A data set that contains the outcome of a survey.,,zonmwpc:10107,,http://purl.obolibrary.org/obo/OMIABIS_0000060
+zonmwpc:10126,COVID policy and prevention measures,,,,zonmwpc:10221,https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C15843
 zonmwpc:10127,environmental data,,,,zonmwpc:10107
 zonmwpc:10128,geographical data,,,,zonmwpc:10107
 zonmwpc:10129,aerial photography,,,,zonmwpc:10128,,http://purl.jp/bio/4/id/200906051703202632
@@ -165,11 +165,11 @@ zonmwpc:10131,GIS data,,"Data produced by a system designed to capture, store, u
 zonmwpc:10132,audiovisual data,,Group of subclasses of audiovisual media that are not imaging technology,,zonmwpc:10107
 zonmwpc:10133,picture,,"A visual representation of an object, scene, person or abstraction.",https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C54273&key=1753678631&b=1&n=null,zonmwpc:10132,,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.03e&ns=ncit&code=C54273&key=1753678631&b=1&n=null
 zonmwpc:10134,video recording,,The storing or preserving of video images to be displayed later.,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C91063,zonmwpc:10132,,https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C91063
-zonmwpc:10135,contextual data,,,,zonmwpc:10107
+zonmwpc:10135,qualitative data,,,,zonmwpc:10107
 zonmwpc:10136,field note,,The text of notes taken in the field about an event.,,zonmwpc:10135,,http://rs.tdwg.org/dwc/terms/fieldNotes
 zonmwpc:10137,focus group discussion,,,,zonmwpc:10135,,,"
 http://ontologies.dbmi.pitt.edu/edda/StudyDesigns.owl#focus_group"
-zonmwpc:10138,social media data,,,,zonmwpc:10135,,,http://purl.bioontology.org/ontology/MESH/D061108
+zonmwpc:10138,social media data,,,,zonmwpc:10124,,,http://purl.bioontology.org/ontology/MESH/D061108
 zonmwpc:10139,diaries,,"Work consisting of records, usually private, of writers' experiences, observations, feelings, attitudes, etc. They may also be works marked in calendar order in which to note appointments and the like.",,zonmwpc:10138,,http://purl.bioontology.org/ontology/MESH/D019497
 zonmwpc:10140,interview data,,,,zonmwpc:10138,,,http://purl.obolibrary.org/obo/FBcv_0000205
 zonmwpc:10141,other type of data,,,,zonmwpc:10107
@@ -266,3 +266,4 @@ zonmwpc:10217,conceptual model,,,,zonmwpc:10213
 zonmwpc:10218,guideline,,,,zonmwpc:10213
 zonmwpc:10219,framework,,,,zonmwpc:10213
 zonmwpc:10220,COVID-19 vaccination grouping,,,,zonmwpc:10037
+zonmwpc:10221,political data,,,,zonmwpc:10107

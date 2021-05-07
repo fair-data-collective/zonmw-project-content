@@ -25,8 +25,8 @@
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "ZonMW Project Content Vocabulary"@en;
   pav:createdOn "2021-02-08T15:00:00+00:00"@en;
-  pav:lastUpdatedOn "2021-04-27T22:00:00+00:00"@en;
-  pav:version "1.0.2"@en;
+  pav:lastUpdatedOn "2021-05-07T20:40:00+00:00"@en;
+  pav:version "1.0.3"@en;
   skos:hasTopConcept zonmwpc:10000, zonmwpc:10001, zonmwpc:10017, zonmwpc:10037, zonmwpc:10107,
     zonmwpc:10144, zonmwpc:10186, zonmwpc:10213;
   skos:prefLabel "ZonMW Project Content Vocabulary"@en .
@@ -621,8 +621,8 @@ zonmwpc:10106 a skos:Concept;
 
 zonmwpc:10107 a skos:Concept;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:narrower zonmwpc:10108, zonmwpc:10118, zonmwpc:10124, zonmwpc:10127, zonmwpc:10128,
-    zonmwpc:10132, zonmwpc:10135, zonmwpc:10141;
+  skos:narrower zonmwpc:10108, zonmwpc:10118, zonmwpc:10124, zonmwpc:10125, zonmwpc:10127,
+    zonmwpc:10128, zonmwpc:10132, zonmwpc:10135, zonmwpc:10141, zonmwpc:10221;
   skos:prefLabel "data"@en;
   skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
 
@@ -711,8 +711,7 @@ zonmwpc:10118 a skos:Concept;
   skos:definition "Group of subclasses of various types of diagnostic imaging technologies"@en;
   skos:exactMatch <http://purl.bioontology.org/ontology/HL7/C001192>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:narrower zonmwpc:10119, zonmwpc:10120, zonmwpc:10121, zonmwpc:10122, zonmwpc:10123,
-    zonmwpc:10125, zonmwpc:10126;
+  skos:narrower zonmwpc:10119, zonmwpc:10120, zonmwpc:10121, zonmwpc:10122, zonmwpc:10123;
   skos:prefLabel "diagnostic imaging"@en .
 
 zonmwpc:10119 a skos:Concept;
@@ -761,17 +760,18 @@ zonmwpc:10123 a skos:Concept;
 zonmwpc:10124 a skos:Concept;
   skos:broader zonmwpc:10107;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "societal data"@en .
+  skos:narrower zonmwpc:10138;
+  skos:prefLabel "social data"@en .
 
 zonmwpc:10125 a skos:Concept;
-  skos:broader zonmwpc:10118;
+  skos:broader zonmwpc:10107;
   skos:definition "A data set that contains the outcome of a survey."@en;
   skos:exactMatch <http://purl.obolibrary.org/obo/OMIABIS_0000060>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "survey data"@en .
 
 zonmwpc:10126 a skos:Concept;
-  skos:broader zonmwpc:10118;
+  skos:broader zonmwpc:10221;
   skos:closeMatch <https://bioportal.bioontology.org/ontologies/NCIT?p=classes&conceptid=http%3A%2F%2Fncicb.nci.nih.gov%2Fxml%2Fowl%2FEVS%2FThesaurus.owl%23C15843>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "COVID policy and prevention measures"@en .
@@ -834,8 +834,8 @@ zonmwpc:10134 a skos:Concept;
 zonmwpc:10135 a skos:Concept;
   skos:broader zonmwpc:10107;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:narrower zonmwpc:10136, zonmwpc:10137, zonmwpc:10138;
-  skos:prefLabel "contextual data"@en .
+  skos:narrower zonmwpc:10136, zonmwpc:10137;
+  skos:prefLabel "qualitative data"@en .
 
 zonmwpc:10136 a skos:Concept;
   skos:broader zonmwpc:10135;
@@ -851,7 +851,7 @@ zonmwpc:10137 a skos:Concept;
   skos:relatedMatch <http://ontologies.dbmi.pitt.edu/edda/StudyDesigns.owl#focus_group> .
 
 zonmwpc:10138 a skos:Concept;
-  skos:broader zonmwpc:10135;
+  skos:broader zonmwpc:10124;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10139, zonmwpc:10140;
   skos:prefLabel "social media data"@en;
@@ -1437,3 +1437,9 @@ zonmwpc:10220 a skos:Concept;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10096, zonmwpc:10097;
   skos:prefLabel "COVID-19 vaccination grouping"@en .
+
+zonmwpc:10221 a skos:Concept;
+  skos:broader zonmwpc:10107;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10126;
+  skos:prefLabel "political data"@en .
