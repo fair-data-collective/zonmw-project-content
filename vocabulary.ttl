@@ -24,9 +24,9 @@
   dct:description "Controlled vocabulary of terms used in ZonMV COVID project content metadata template"@en;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "ZonMW Project Content Vocabulary"@en;
-  pav:createdOn "2021-02-08T15:00:00+00:00"@en;
+  pav:createdOn "2021-02-10T11:00:00+00:00"@en;
   pav:lastUpdatedOn "2021-05-07T20:40:00+00:00"@en;
-  pav:version "1.0.3"@en;
+  pav:version "1.0.4"@en;
   skos:hasTopConcept zonmwpc:10000, zonmwpc:10001, zonmwpc:10017, zonmwpc:10037, zonmwpc:10107,
     zonmwpc:10144, zonmwpc:10186, zonmwpc:10213;
   skos:prefLabel "ZonMW Project Content Vocabulary"@en .
@@ -643,10 +643,10 @@ zonmwpc:10109 a skos:Concept;
   skos:prefLabel "health record data"@en .
 
 zonmwpc:10110 a skos:Concept;
-  dct:source <https://bioportal.bioontology.org/ontologies/ONTOAD?p=classes&conceptid=http%3A%2F%2Fdoe-generated-ontology.com%2FOntoAD%23C0262926>;
+  dct:source <http://doe-generated-ontology.com/OntoAD#C0262926>;
   skos:broader zonmwpc:10108;
   skos:definition "A collection of information about a person's health. It may include information about allergies, illnesses and surgeries, and dates and results of physical exams, tests, screenings, and immunizations. It may also include information about medicines taken and about diet and exercise"@en;
-  skos:exactMatch <https://bioportal.bioontology.org/ontologies/ONTOAD?p=classes&conceptid=http%3A%2F%2Fdoe-generated-ontology.com%2FOntoAD%23C0262926>;
+  skos:exactMatch <http://doe-generated-ontology.com/OntoAD#C0262926>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "medical history data"@en .
 
@@ -659,6 +659,7 @@ zonmwpc:10111 a skos:Concept;
   skos:prefLabel "diagnostic data"@en .
 
 zonmwpc:10112 a skos:Concept;
+  dct:source <http://purl.obolibrary.org/obo/ERO_0001186>;
   skos:broader zonmwpc:10108;
   skos:definition "Data related to physiological recording or monitoring."@en;
   skos:exactMatch <http://purl.obolibrary.org/obo/ERO_0001186>;
@@ -1128,6 +1129,7 @@ zonmwpc:10172 a skos:Concept;
 
 zonmwpc:10173 a skos:Concept;
   dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C132119>;
+  skos:altLabel "nose specimen"@en, "nose swab"@en;
   skos:broader zonmwpc:10169;
   skos:definition "A method used to collect biological material from within the nasal passages. A cotton swab is inserted into the nasal opening and rotated against the anterior nasal mucosa and them withdrawn."@en;
   skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C132119>;
