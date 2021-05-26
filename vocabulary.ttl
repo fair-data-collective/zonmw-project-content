@@ -19,14 +19,14 @@
 @prefix zonmwpc: <http://vocab.fairdatacollective.org/zonmw/project-content/> .
 
 <http://vocab.fairdatacollective.org/zonmw/project-content/> a skos:ConceptScheme;
-  dct:contributor <https://orcid.org/0000-0002-7160-5942>, <https://orcid.org/0000-0002-9381-9693>;
-  dct:creator <https://orcid.org/0000-0003-2195-3997>;
+  dct:contributor <https://orcid.org/0000-0002-9381-9693>;
+  dct:creator <https://orcid.org/0000-0002-7160-5942>, <https://orcid.org/0000-0003-2195-3997>;
   dct:description "Controlled vocabulary of terms used in ZonMV COVID project content metadata template"@en;
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "ZonMW Project Content Vocabulary"@en;
   pav:createdOn "2021-02-10T11:00:00+00:00"@en;
-  pav:lastUpdatedOn "2021-05-07T20:40:00+00:00"@en;
-  pav:version "1.0.4"@en;
+  pav:lastUpdatedOn "2021-05-26T22:40:00+00:00"@en;
+  pav:version "1.1.0"@en;
   skos:hasTopConcept zonmwpc:10000, zonmwpc:10001, zonmwpc:10017, zonmwpc:10037, zonmwpc:10107,
     zonmwpc:10144, zonmwpc:10186, zonmwpc:10213;
   skos:prefLabel "ZonMW Project Content Vocabulary"@en .
@@ -45,6 +45,7 @@ zonmwpc:10001 a skos:Concept;
 
 zonmwpc:10002 a skos:Concept;
   skos:broader zonmwpc:10001;
+  skos:definition "type of geographical area (rural, urban,..)"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10003, zonmwpc:10004, zonmwpc:10005, zonmwpc:10006, zonmwpc:10007,
     zonmwpc:10008;
@@ -82,6 +83,7 @@ zonmwpc:10008 a skos:Concept;
 
 zonmwpc:10009 a skos:Concept;
   skos:broader zonmwpc:10001;
+  skos:definition "type of environment where the care of patients is conducted"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10010, zonmwpc:10011, zonmwpc:10012, zonmwpc:10013, zonmwpc:10014,
     zonmwpc:10015, zonmwpc:10016;
@@ -622,13 +624,14 @@ zonmwpc:10106 a skos:Concept;
 zonmwpc:10107 a skos:Concept;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10108, zonmwpc:10118, zonmwpc:10124, zonmwpc:10125, zonmwpc:10127,
-    zonmwpc:10128, zonmwpc:10132, zonmwpc:10135, zonmwpc:10141, zonmwpc:10221;
+    zonmwpc:10128, zonmwpc:10132, zonmwpc:10135, zonmwpc:10141, zonmwpc:10221, zonmwpc:10222,
+    zonmwpc:10223;
   skos:prefLabel "data"@en;
   skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
 
 zonmwpc:10108 a skos:Concept;
   skos:broader zonmwpc:10107;
-  skos:definition "Grouping of terms that relate to the health and physical condition of an individual subject, as well as biological information about any relevant pathogens"@en;
+  skos:definition "Data that refer to a person's state of physical, mental and social well-being"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10109, zonmwpc:10110, zonmwpc:10111, zonmwpc:10112, zonmwpc:10113,
     zonmwpc:10114, zonmwpc:10115, zonmwpc:10116, zonmwpc:10117;
@@ -709,7 +712,7 @@ zonmwpc:10117 a skos:Concept;
 
 zonmwpc:10118 a skos:Concept;
   skos:broader zonmwpc:10107;
-  skos:definition "Group of subclasses of various types of diagnostic imaging technologies"@en;
+  skos:definition "Information obtained via any method that uses a visual display of structural or functional patterns of organs or tissues for diagnostic evaluation."@en;
   skos:exactMatch <http://purl.bioontology.org/ontology/HL7/C001192>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10119, zonmwpc:10120, zonmwpc:10121, zonmwpc:10122, zonmwpc:10123;
@@ -760,6 +763,7 @@ zonmwpc:10123 a skos:Concept;
 
 zonmwpc:10124 a skos:Concept;
   skos:broader zonmwpc:10107;
+  skos:definition "Data that refer to human society and its members"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10138;
   skos:prefLabel "social data"@en .
@@ -779,11 +783,13 @@ zonmwpc:10126 a skos:Concept;
 
 zonmwpc:10127 a skos:Concept;
   skos:broader zonmwpc:10107;
+  skos:definition "Data that refer to the external elements and conditions which surround, influence, and affect the life and development of an organism or population."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "environmental data"@en .
 
 zonmwpc:10128 a skos:Concept;
   skos:broader zonmwpc:10107;
+  skos:definition "Data which refer to a place on the Earth, by its name or by its geographical location"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10129, zonmwpc:10130, zonmwpc:10131;
   skos:prefLabel "geographical data"@en .
@@ -811,7 +817,7 @@ zonmwpc:10131 a skos:Concept;
 
 zonmwpc:10132 a skos:Concept;
   skos:broader zonmwpc:10107;
-  skos:definition "Group of subclasses of audiovisual media that are not imaging technology"@en;
+  skos:definition "Information that is communicated through recordings of sight and/or sound"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10133, zonmwpc:10134;
   skos:prefLabel "audiovisual data"@en .
@@ -834,8 +840,9 @@ zonmwpc:10134 a skos:Concept;
 
 zonmwpc:10135 a skos:Concept;
   skos:broader zonmwpc:10107;
+  skos:definition "Information that cannot be represented through numbers and is instead expressed through descriptive means"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:narrower zonmwpc:10136, zonmwpc:10137;
+  skos:narrower zonmwpc:10136, zonmwpc:10137, zonmwpc:10139, zonmwpc:10140;
   skos:prefLabel "qualitative data"@en .
 
 zonmwpc:10136 a skos:Concept;
@@ -854,25 +861,25 @@ zonmwpc:10137 a skos:Concept;
 zonmwpc:10138 a skos:Concept;
   skos:broader zonmwpc:10124;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:narrower zonmwpc:10139, zonmwpc:10140;
   skos:prefLabel "social media data"@en;
   skos:relatedMatch <http://purl.bioontology.org/ontology/MESH/D061108> .
 
 zonmwpc:10139 a skos:Concept;
-  skos:broader zonmwpc:10138;
+  skos:broader zonmwpc:10135;
   skos:definition "Work consisting of records, usually private, of writers' experiences, observations, feelings, attitudes, etc. They may also be works marked in calendar order in which to note appointments and the like."@en;
   skos:exactMatch <http://purl.bioontology.org/ontology/MESH/D019497>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "diaries"@en .
 
 zonmwpc:10140 a skos:Concept;
-  skos:broader zonmwpc:10138;
+  skos:broader zonmwpc:10135;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "interview data"@en;
   skos:relatedMatch <http://purl.obolibrary.org/obo/FBcv_0000205> .
 
 zonmwpc:10141 a skos:Concept;
   skos:broader zonmwpc:10107;
+  skos:definition "Other forms of data that are not easily categorized or defined"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10142, zonmwpc:10143;
   skos:prefLabel "other type of data"@en .
@@ -892,7 +899,7 @@ zonmwpc:10143 a skos:Concept;
 
 zonmwpc:10144 a skos:Concept;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:narrower zonmwpc:10145, zonmwpc:10153, zonmwpc:10169, zonmwpc:10180;
+  skos:narrower zonmwpc:10145, zonmwpc:10153, zonmwpc:10169, zonmwpc:10180, zonmwpc:10224;
   skos:prefLabel "biomaterial"@en;
   skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
 
@@ -1374,21 +1381,25 @@ zonmwpc:10207 a skos:Concept;
 
 zonmwpc:10208 a skos:Concept;
   skos:broader zonmwpc:10186;
+  skos:definition "an online service that enables you to upload and query, view and download data"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "repository"@en .
 
 zonmwpc:10209 a skos:Concept;
   skos:broader zonmwpc:10186;
+  skos:definition "A physical store of biological samples, and an online service that enables you to request the samples and data about them"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "biobank"@en .
 
 zonmwpc:10210 a skos:Concept;
   skos:broader zonmwpc:10186;
+  skos:definition "an online service that enables you to query and/or download datasets"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "data catalogue"@en .
 
 zonmwpc:10211 a skos:Concept;
   skos:broader zonmwpc:10186;
+  skos:definition "service facilitating compliance with regulatory requirements and best practice standards relating to ethical, legal and societal issues (ELSI)"@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "ELSI service"@en .
 
@@ -1411,6 +1422,7 @@ zonmwpc:10214 a skos:Concept;
 
 zonmwpc:10215 a skos:Concept;
   skos:broader zonmwpc:10213;
+  skos:definition "is the overarching name for any set of fixed denotations that are used to describe something with the goal to reduce ambiguity and facilitate machine interoperability. It can range from a simple controlled vocabulary (a simple list of terms) to a complex ontology (formal definitions of terms and their relations semantically expressed in a machine-readable way). This term may also include taxonomies, thesauri, conceptual models or any other kinds of knowledge organization sources."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "semantic artefact"@en .
 
@@ -1442,6 +1454,22 @@ zonmwpc:10220 a skos:Concept;
 
 zonmwpc:10221 a skos:Concept;
   skos:broader zonmwpc:10107;
+  skos:definition "Data about activities concerned with governmental policies, functions, etc."@en;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10126;
   skos:prefLabel "political data"@en .
+
+zonmwpc:10222 a skos:Concept;
+  skos:broader zonmwpc:10107;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "economic data"@en .
+
+zonmwpc:10223 a skos:Concept;
+  skos:broader zonmwpc:10107;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "socio-economic data"@en .
+
+zonmwpc:10224 a skos:Concept;
+  skos:broader zonmwpc:10144;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "other type of biomaterial"@en .
