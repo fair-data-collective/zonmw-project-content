@@ -28,7 +28,7 @@
   pav:lastUpdatedOn "2021-05-26T22:40:00+00:00"@en;
   pav:version "1.1.0"@en;
   skos:hasTopConcept zonmwpc:10000, zonmwpc:10001, zonmwpc:10017, zonmwpc:10037, zonmwpc:10107,
-    zonmwpc:10144, zonmwpc:10186, zonmwpc:10213;
+    zonmwpc:10144, zonmwpc:10186, zonmwpc:10213, zonmwpc:10225;
   skos:prefLabel "ZonMW Project Content Vocabulary"@en .
 
 zonmwpc:10000 a skos:Concept;
@@ -1473,3 +1473,30 @@ zonmwpc:10224 a skos:Concept;
   skos:broader zonmwpc:10144;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "other type of biomaterial"@en .
+
+zonmwpc:10225 a skos:Concept;
+  skos:definition "ZonMw specific focus areas"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10226, zonmwpc:10227, zonmwpc:10228, zonmwpc:10229;
+  skos:prefLabel "focus area"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
+
+zonmwpc:10226 a skos:Concept;
+  skos:broader zonmwpc:10225;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "predictive diagnostics and treatment"@en .
+
+zonmwpc:10227 a skos:Concept;
+  skos:broader zonmwpc:10225;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "virus, immunity, immune response and pathogenesis"@en .
+
+zonmwpc:10228 a skos:Concept;
+  skos:broader zonmwpc:10225;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "care and prevention"@en .
+
+zonmwpc:10229 a skos:Concept;
+  skos:broader zonmwpc:10225;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "effects on society"@en .

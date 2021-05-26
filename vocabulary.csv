@@ -271,3 +271,8 @@ zonmwpc:10221,political data,,"Data about activities concerned with governmental
 zonmwpc:10222,economic data,,,,zonmwpc:10107
 zonmwpc:10223,socio-economic data,,,,zonmwpc:10107
 zonmwpc:10224,other type of biomaterial,,,,zonmwpc:10144
+zonmwpc:10225,focus area,,ZonMw specific focus areas
+zonmwpc:10226,predictive diagnostics and treatment,,,,zonmwpc:10225
+zonmwpc:10227,"virus, immunity, immune response and pathogenesis",,,,zonmwpc:10225
+zonmwpc:10228,care and prevention,,,,zonmwpc:10225
+zonmwpc:10229,effects on society,,,,zonmwpc:10225
