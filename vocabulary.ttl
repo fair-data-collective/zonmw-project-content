@@ -25,10 +25,10 @@
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "ZonMW Project Content Vocabulary"@en;
   pav:createdOn "2021-02-10T11:00:00+00:00"@en;
-  pav:lastUpdatedOn "2021-05-26T22:40:00+00:00"@en;
-  pav:version "1.1.0"@en;
+  pav:lastUpdatedOn "2021-06-23T08:26:00+00:00"@en;
+  pav:version "1.2.0"@en;
   skos:hasTopConcept zonmwpc:10000, zonmwpc:10001, zonmwpc:10017, zonmwpc:10037, zonmwpc:10107,
-    zonmwpc:10144, zonmwpc:10186, zonmwpc:10213, zonmwpc:10225;
+    zonmwpc:10144, zonmwpc:10186, zonmwpc:10213, zonmwpc:10225, zonmwpc:10230, zonmwpc:10256;
   skos:prefLabel "ZonMW Project Content Vocabulary"@en .
 
 zonmwpc:10000 a skos:Concept;
@@ -127,7 +127,8 @@ zonmwpc:10016 a skos:Concept;
 
 zonmwpc:10017 a skos:Concept;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:narrower zonmwpc:10018, zonmwpc:10023, zonmwpc:10027, zonmwpc:10033;
+  skos:narrower zonmwpc:10018, zonmwpc:10023, zonmwpc:10027, zonmwpc:10033, zonmwpc:10241,
+    zonmwpc:10242, zonmwpc:10243;
   skos:prefLabel "temporal scope"@en;
   skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
 
@@ -138,18 +139,18 @@ zonmwpc:10018 a skos:Concept;
   skos:prefLabel "health care phase"@en .
 
 zonmwpc:10019 a skos:Concept;
-  skos:broader zonmwpc:10018;
+  skos:broader "10230"@en, zonmwpc:10018;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "acute care"@en .
 
 zonmwpc:10020 a skos:Concept;
-  skos:broader zonmwpc:10018;
+  skos:broader "10230"@en, zonmwpc:10018;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "post-covid care"@en .
 
 zonmwpc:10021 a skos:Concept;
   dct:source <https://bioportal.bioontology.org/ontologies/MEDLINEPLUS?p=classes&conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FMEDLINEPLUS%2FC0030231>;
-  skos:broader zonmwpc:10018;
+  skos:broader "10230"@en, zonmwpc:10018;
   skos:definition "Palliative care is treatment of the discomfort, symptoms, and stress of serious illness. It provides relief from distressing symptoms including pain, shortness of breath, constipation, nausea, loss of appetite, problems with sleep. It can also help you deal with the side effects of the medical treatments you're receiving, care at the end of life, always includes palliative care. But you may receive palliative care at any stage of an illness. The goal is to make you comfortable and improve your quality of life."@en;
   skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C101516>, <https://bioportal.bioontology.org/ontologies/MEDLINEPLUS?p=classes&conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FMEDLINEPLUS%2FC0030231>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
@@ -157,7 +158,7 @@ zonmwpc:10021 a skos:Concept;
 
 zonmwpc:10022 a skos:Concept;
   dct:source <https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.02d&ns=ncit&code=C15315&key=1767529850&b=1&n=null>;
-  skos:broader zonmwpc:10018;
+  skos:broader "10230"@en, zonmwpc:10018;
   skos:definition "Restoration of the ability to function in a normal or near normal manner following disease, illness, or injury."@en;
   skos:exactMatch <https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.02d&ns=ncit&code=C15315&key=1767529850&b=1&n=null>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
@@ -910,7 +911,9 @@ zonmwpc:10145 a skos:Concept;
   skos:exactMatch <http://purl.obolibrary.org/obo/OBI_0100026>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10146, zonmwpc:10147, zonmwpc:10148, zonmwpc:10149, zonmwpc:10150,
-    zonmwpc:10151, zonmwpc:10152;
+    zonmwpc:10151, zonmwpc:10152, zonmwpc:10244, zonmwpc:10245, zonmwpc:10246, zonmwpc:10247,
+    zonmwpc:10248, zonmwpc:10249, zonmwpc:10250, zonmwpc:10251, zonmwpc:10252, zonmwpc:10253,
+    zonmwpc:10254, zonmwpc:10255;
   skos:prefLabel "organism"@en .
 
 zonmwpc:10146 a skos:Concept;
@@ -1107,7 +1110,8 @@ zonmwpc:10169 a skos:Concept;
   skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/123038009>, <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C19157>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10170, zonmwpc:10171, zonmwpc:10172, zonmwpc:10173, zonmwpc:10174,
-    zonmwpc:10175, zonmwpc:10176, zonmwpc:10177, zonmwpc:10178, zonmwpc:10179;
+    zonmwpc:10175, zonmwpc:10176, zonmwpc:10177, zonmwpc:10178, zonmwpc:10179, zonmwpc:10262,
+    zonmwpc:10263;
   skos:prefLabel "specimen"@en .
 
 zonmwpc:10170 a skos:Concept;
@@ -1500,3 +1504,190 @@ zonmwpc:10229 a skos:Concept;
   skos:broader zonmwpc:10225;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "effects on society"@en .
+
+zonmwpc:10230 a skos:Concept;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10231, zonmwpc:10232, zonmwpc:10233, zonmwpc:10234, zonmwpc:10235,
+    zonmwpc:10236, zonmwpc:10237, zonmwpc:10238, zonmwpc:10239, zonmwpc:10240;
+  skos:prefLabel "subject"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
+
+zonmwpc:10231 a skos:Concept;
+  skos:broader zonmwpc:10230;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "organisation of care and prevention"@en .
+
+zonmwpc:10232 a skos:Concept;
+  dct:source <http://purl.obolibrary.org/obo/OGMS_0000073>;
+  skos:broader zonmwpc:10230;
+  skos:definition "Het diagnostisch proces"@nl, "The representation of a conclusion of a diagnostic process."@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/OGMS_0000073>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "Diagnostiek"@nl, "diagnostics"@en .
+
+zonmwpc:10233 a skos:Concept;
+  skos:broader zonmwpc:10230;
+  skos:definition "De impact van de 1,5m maatregel"@nl, "The impact of the social distancing measures"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "De Impact Van Maatregels En Strategieen"@nl, "impact of measures and strategies"@en .
+
+zonmwpc:10234 a skos:Concept;
+  skos:broader zonmwpc:10230;
+  skos:definition "The use of healthcare, 1st line and 2nd line."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "Gezondheidszorg"@nl, "healthcare"@en .
+
+zonmwpc:10235 a skos:Concept;
+  dct:source <https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.02d&ns=ncit&code=C16529&key=2040663473&b=1&n=null>;
+  skos:broader zonmwpc:10230;
+  skos:definition "The activities of educating or instructing or teaching; activities that impart knowledge or skill."@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "Onderwijs"@nl, "education"@en .
+
+zonmwpc:10236 a skos:Concept;
+  dct:source <http://purl.obolibrary.org/obo/OGMS_0000090>;
+  skos:broader zonmwpc:10230;
+  skos:definition "A planned process whose completion is hypothesized by a health care provider to eliminate, prevent, or alleviate a disorder, the signs and symptoms of a disorder, or a pathological process"@en;
+  skos:exactMatch <http://purl.obolibrary.org/obo/OGMS_0000090>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "Behandeling"@nl, "therapy"@en .
+
+zonmwpc:10237 a skos:Concept;
+  skos:broader zonmwpc:10230;
+  skos:definition "The process of assessing the likelihood of the risk of admission to the Emergency Department of a COVID patient"@en;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "Risico Analyse"@nl, "risk analysis"@en .
+
+zonmwpc:10238 a skos:Concept;
+  dct:source <https://scigraph.springernature.com/ontologies/subjects/prognosis>;
+  skos:broader zonmwpc:10230;
+  skos:definition "Prognosis is the prediction of the probable outcome of an individual's current medical condition. A prognosis is made on the basis of the normal course of a disease, the individual's physical and psychological condition, and additional factors such as therapeutic approach."@en;
+  skos:exactMatch <https://scigraph.springernature.com/ontologies/subjects/prognosis>;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "Prognose"@nl, "prognosis"@en .
+
+zonmwpc:10239 a skos:Concept;
+  skos:broader zonmwpc:10230;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "Immunologie"@nl, "immunology"@en .
+
+zonmwpc:10240 a skos:Concept;
+  skos:broader zonmwpc:10230;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "Gedrag"@nl, "behaviour"@en .
+
+zonmwpc:10241 a skos:Concept;
+  skos:broader zonmwpc:10017;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "prevention phase"@en .
+
+zonmwpc:10242 a skos:Concept;
+  skos:broader zonmwpc:10017;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "aftercare phase"@en .
+
+zonmwpc:10243 a skos:Concept;
+  skos:broader zonmwpc:10017;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "free-from-disease phase"@en .
+
+zonmwpc:10244 a skos:Concept;
+  skos:broader zonmwpc:10145;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "fungus"@en .
+
+zonmwpc:10245 a skos:Concept;
+  skos:broader zonmwpc:10145;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "diary cattle"@en .
+
+zonmwpc:10246 a skos:Concept;
+  skos:broader zonmwpc:10145;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "veal calve"@en .
+
+zonmwpc:10247 a skos:Concept;
+  skos:broader zonmwpc:10145;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "beef cattle"@en .
+
+zonmwpc:10248 a skos:Concept;
+  skos:broader zonmwpc:10145;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "buffalo"@en .
+
+zonmwpc:10249 a skos:Concept;
+  skos:broader zonmwpc:10145;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "sheep (wool)"@en .
+
+zonmwpc:10250 a skos:Concept;
+  skos:broader zonmwpc:10145;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "sheep (milk)"@en .
+
+zonmwpc:10251 a skos:Concept;
+  skos:broader zonmwpc:10145;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "goat (meat)"@en .
+
+zonmwpc:10252 a skos:Concept;
+  skos:broader zonmwpc:10145;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "goat (milk)"@en .
+
+zonmwpc:10253 a skos:Concept;
+  skos:broader zonmwpc:10145;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "horse"@en .
+
+zonmwpc:10254 a skos:Concept;
+  skos:broader zonmwpc:10145;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "pig"@en .
+
+zonmwpc:10255 a skos:Concept;
+  skos:broader zonmwpc:10145;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "broiler"@en .
+
+zonmwpc:10256 a skos:Concept;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:narrower zonmwpc:10257, zonmwpc:10258, zonmwpc:10259, zonmwpc:10260, zonmwpc:10261;
+  skos:prefLabel "animal group"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
+
+zonmwpc:10257 a skos:Concept;
+  skos:broader zonmwpc:10256;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "insect"@en .
+
+zonmwpc:10258 a skos:Concept;
+  skos:broader zonmwpc:10256;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "livestock"@en .
+
+zonmwpc:10259 a skos:Concept;
+  skos:broader zonmwpc:10256;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "poultry"@en .
+
+zonmwpc:10260 a skos:Concept;
+  skos:broader zonmwpc:10256;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "wildlife"@en .
+
+zonmwpc:10261 a skos:Concept;
+  skos:broader zonmwpc:10256;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "companion animal"@en .
+
+zonmwpc:10262 a skos:Concept;
+  skos:broader zonmwpc:10169;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "perineal swab"@en .
+
+zonmwpc:10263 a skos:Concept;
+  skos:broader zonmwpc:10169;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "cloacal swab"@en .
