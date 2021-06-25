@@ -141,18 +141,18 @@ zonmwpc:10018 a skos:Concept;
   skos:prefLabel "health care phase"@en .
 
 zonmwpc:10019 a skos:Concept;
-  skos:broader "10230"@en, zonmwpc:10018;
+  skos:broader zonmwpc:10018, zonmwpc:10230;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "acute care"@en .
 
 zonmwpc:10020 a skos:Concept;
-  skos:broader "10230"@en, zonmwpc:10018;
+  skos:broader zonmwpc:10018, zonmwpc:10230;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "post-covid care"@en .
 
 zonmwpc:10021 a skos:Concept;
   dct:source <https://bioportal.bioontology.org/ontologies/MEDLINEPLUS?p=classes&conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FMEDLINEPLUS%2FC0030231>;
-  skos:broader "10230"@en, zonmwpc:10018;
+  skos:broader zonmwpc:10018, zonmwpc:10230;
   skos:definition "Palliative care is treatment of the discomfort, symptoms, and stress of serious illness. It provides relief from distressing symptoms including pain, shortness of breath, constipation, nausea, loss of appetite, problems with sleep. It can also help you deal with the side effects of the medical treatments you're receiving, care at the end of life, always includes palliative care. But you may receive palliative care at any stage of an illness. The goal is to make you comfortable and improve your quality of life."@en;
   skos:exactMatch <http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl#C101516>, <https://bioportal.bioontology.org/ontologies/MEDLINEPLUS?p=classes&conceptid=http%3A%2F%2Fpurl.bioontology.org%2Fontology%2FMEDLINEPLUS%2FC0030231>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
@@ -160,7 +160,7 @@ zonmwpc:10021 a skos:Concept;
 
 zonmwpc:10022 a skos:Concept;
   dct:source <https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.02d&ns=ncit&code=C15315&key=1767529850&b=1&n=null>;
-  skos:broader "10230"@en, zonmwpc:10018;
+  skos:broader zonmwpc:10018, zonmwpc:10230;
   skos:definition "Restoration of the ability to function in a normal or near normal manner following disease, illness, or injury."@en;
   skos:exactMatch <https://ncit.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&version=21.02d&ns=ncit&code=C15315&key=1767529850&b=1&n=null>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
@@ -1507,8 +1507,9 @@ zonmwpc:10229 a skos:Concept;
 
 zonmwpc:10230 a skos:Concept;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:narrower zonmwpc:10231, zonmwpc:10232, zonmwpc:10233, zonmwpc:10234, zonmwpc:10235,
-    zonmwpc:10236, zonmwpc:10237, zonmwpc:10238, zonmwpc:10239, zonmwpc:10240;
+  skos:narrower zonmwpc:10019, zonmwpc:10020, zonmwpc:10021, zonmwpc:10022, zonmwpc:10231,
+    zonmwpc:10232, zonmwpc:10233, zonmwpc:10234, zonmwpc:10235, zonmwpc:10236, zonmwpc:10237,
+    zonmwpc:10238, zonmwpc:10239, zonmwpc:10240;
   skos:prefLabel "subject"@en;
   skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
 
