@@ -4,6 +4,7 @@ PREFIX,pav,http://purl.org/pav/
 PREFIX,dct,http://purl.org/dc/terms/
 PREFIX,owl,http://www.w3.org/2002/07/owl#
 PREFIX,xsd,http://www.w3.org/2001/XMLSchema#
+PREFIX,iop,https://w3id.org/iadopt/ont/iadopt/
 skos:prefLabel,ZonMW Project Content Vocabulary
 dct:title,ZonMW Project Content Vocabulary
 dct:description,Controlled vocabulary of terms used in ZonMV COVID project content metadata template
@@ -13,7 +14,7 @@ dct:contributor,https://orcid.org/0000-0002-9381-9693
 dct:rights,https://spdx.org/licenses/CC0-1.0 
 pav:version,1.2.0
 pav:createdOn,2021-02-10T11:00:00+00:00
-pav:lastUpdatedOn,2021-06-23T08:26:00+00:00
+pav:lastUpdatedOn,2021-06-24T05:00:00+00:00
 
 
 
@@ -21,7 +22,7 @@ pav:lastUpdatedOn,2021-06-23T08:26:00+00:00
 
 
 
-Identifier,skos:prefLabel@en,skos:prefLabel@nl,"skos:altLabel(separator="","")",skos:definition@en,skos:definition@nl,"dct:source(separator="","")","skos:broader(separator="","")","skos:closeMatch(separator="","")","skos:exactMatch(separator="","")","skos:relatedMatch(separator="","")",owl:deprecated^^xsd:boolean,dct:isReplacedBy,skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")"
+Identifier,skos:prefLabel@en,skos:prefLabel@nl,"skos:altLabel(separator="","")",skos:definition@en,skos:definition@nl,"dct:source(separator="","")","skos:broader(separator="","")","skos:closeMatch(separator="","")","skos:exactMatch(separator="","")","skos:relatedMatch(separator="","")",owl:deprecated^^xsd:boolean,dct:isReplacedBy,skos:editorialNote@en,"dct:creator(separator="","")","dct:contributor(separator="","")",iop:hasProperty,iop:hasObjectOfInterest,iop:hasMatrix,"iop:hasContextObject(separator="","")","iop:hasConstraint(separator="","")"
 zonmwpc:10000,deprecated,,,This is a set of controlled terms which are deprecated.,,,,, 
 zonmwpc:10001,spatial scope
 zonmwpc:10002,area ,,,"type of geographical area (rural, urban,..)",,,zonmwpc:10001
@@ -293,22 +294,8 @@ zonmwpc:10241,prevention phase,,,,,,zonmwpc:10017
 zonmwpc:10242,aftercare phase,,,,,,zonmwpc:10017
 zonmwpc:10243,free-from-disease phase,,,,,,zonmwpc:10017
 zonmwpc:10244,fungus,,,,,,zonmwpc:10145
-zonmwpc:10245,diary cattle,,,,,,zonmwpc:10145
-zonmwpc:10246,veal calve,,,,,,zonmwpc:10145
-zonmwpc:10247,beef cattle,,,,,,zonmwpc:10145
-zonmwpc:10248,buffalo,,,,,,zonmwpc:10145
-zonmwpc:10249,sheep (wool),,,,,,zonmwpc:10145
-zonmwpc:10250,sheep (milk),,,,,,zonmwpc:10145
-zonmwpc:10251,goat (meat),,,,,,zonmwpc:10145
-zonmwpc:10252,goat (milk),,,,,,zonmwpc:10145
-zonmwpc:10253,horse,,,,,,zonmwpc:10145
-zonmwpc:10254,pig,,,,,,zonmwpc:10145
-zonmwpc:10255,broiler,,,,,,zonmwpc:10145
-zonmwpc:10256,animal group
-zonmwpc:10257,insect,,,,,,zonmwpc:10256
-zonmwpc:10258,livestock,,,,,,zonmwpc:10256
-zonmwpc:10259,poultry,,,,,,zonmwpc:10256
-zonmwpc:10260,wildlife,,,,,,zonmwpc:10256
-zonmwpc:10261,companion animal,,,,,,zonmwpc:10256
-zonmwpc:10262,perineal swab,,,,,,zonmwpc:10169
-zonmwpc:10263,cloacal swab,,,,,,zonmwpc:10169
+zonmwpc:10245,perineal swab,,,,,,zonmwpc:10169
+zonmwpc:10246,cloacal swab,,,,,,zonmwpc:10169
+zonmwpc:10247,variable,,,"A description of something observed or derived, minimally consisting of  an ObjectOfInterest and its Property.",,https://w3id.org/iadopt/ont/iadopt/variable,,,https://w3id.org/iadopt/ont/iadopt/variable
+zonmwpc:10248,property,,,A type of a characteristic of the ObjectOfInterest.,,https://w3id.org/iadopt/ont/iadopt/property,,,https://w3id.org/iadopt/ont/iadopt/property
+zonmwpc:10249,constraint,,,A Constraint limits the scope of the observation and confines the context to a particular state. It describes properties of the involved entities that are relevant to the particular observation.,,https://w3id.org/iadopt/ont/iadopt/constraint,,,https://w3id.org/iadopt/ont/iadopt/constraint

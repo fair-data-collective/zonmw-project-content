@@ -3,6 +3,7 @@
 @prefix dct: <http://purl.org/dc/terms/> .
 @prefix euvoc: <http://publications.europa.eu/ontology/euvoc#> .
 @prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix iop: <https://w3id.org/iadopt/ont/iadopt/> .
 @prefix org: <http://www.w3.org/ns/org#> .
 @prefix owl: <http://www.w3.org/2002/07/owl#> .
 @prefix pav: <http://purl.org/pav/> .
@@ -25,10 +26,11 @@
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "ZonMW Project Content Vocabulary"@en;
   pav:createdOn "2021-02-10T11:00:00+00:00"@en;
-  pav:lastUpdatedOn "2021-06-23T08:26:00+00:00"@en;
+  pav:lastUpdatedOn "2021-06-24T05:00:00+00:00"@en;
   pav:version "1.2.0"@en;
   skos:hasTopConcept zonmwpc:10000, zonmwpc:10001, zonmwpc:10017, zonmwpc:10037, zonmwpc:10107,
-    zonmwpc:10144, zonmwpc:10186, zonmwpc:10213, zonmwpc:10225, zonmwpc:10230, zonmwpc:10256;
+    zonmwpc:10144, zonmwpc:10186, zonmwpc:10213, zonmwpc:10225, zonmwpc:10230, zonmwpc:10247,
+    zonmwpc:10248, zonmwpc:10249;
   skos:prefLabel "ZonMW Project Content Vocabulary"@en .
 
 zonmwpc:10000 a skos:Concept;
@@ -911,9 +913,7 @@ zonmwpc:10145 a skos:Concept;
   skos:exactMatch <http://purl.obolibrary.org/obo/OBI_0100026>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10146, zonmwpc:10147, zonmwpc:10148, zonmwpc:10149, zonmwpc:10150,
-    zonmwpc:10151, zonmwpc:10152, zonmwpc:10244, zonmwpc:10245, zonmwpc:10246, zonmwpc:10247,
-    zonmwpc:10248, zonmwpc:10249, zonmwpc:10250, zonmwpc:10251, zonmwpc:10252, zonmwpc:10253,
-    zonmwpc:10254, zonmwpc:10255;
+    zonmwpc:10151, zonmwpc:10152, zonmwpc:10244;
   skos:prefLabel "organism"@en .
 
 zonmwpc:10146 a skos:Concept;
@@ -1110,8 +1110,8 @@ zonmwpc:10169 a skos:Concept;
   skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/123038009>, <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C19157>;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:narrower zonmwpc:10170, zonmwpc:10171, zonmwpc:10172, zonmwpc:10173, zonmwpc:10174,
-    zonmwpc:10175, zonmwpc:10176, zonmwpc:10177, zonmwpc:10178, zonmwpc:10179, zonmwpc:10262,
-    zonmwpc:10263;
+    zonmwpc:10175, zonmwpc:10176, zonmwpc:10177, zonmwpc:10178, zonmwpc:10179, zonmwpc:10245,
+    zonmwpc:10246;
   skos:prefLabel "specimen"@en .
 
 zonmwpc:10170 a skos:Concept;
@@ -1597,97 +1597,35 @@ zonmwpc:10244 a skos:Concept;
   skos:prefLabel "fungus"@en .
 
 zonmwpc:10245 a skos:Concept;
-  skos:broader zonmwpc:10145;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "diary cattle"@en .
-
-zonmwpc:10246 a skos:Concept;
-  skos:broader zonmwpc:10145;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "veal calve"@en .
-
-zonmwpc:10247 a skos:Concept;
-  skos:broader zonmwpc:10145;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "beef cattle"@en .
-
-zonmwpc:10248 a skos:Concept;
-  skos:broader zonmwpc:10145;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "buffalo"@en .
-
-zonmwpc:10249 a skos:Concept;
-  skos:broader zonmwpc:10145;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "sheep (wool)"@en .
-
-zonmwpc:10250 a skos:Concept;
-  skos:broader zonmwpc:10145;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "sheep (milk)"@en .
-
-zonmwpc:10251 a skos:Concept;
-  skos:broader zonmwpc:10145;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "goat (meat)"@en .
-
-zonmwpc:10252 a skos:Concept;
-  skos:broader zonmwpc:10145;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "goat (milk)"@en .
-
-zonmwpc:10253 a skos:Concept;
-  skos:broader zonmwpc:10145;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "horse"@en .
-
-zonmwpc:10254 a skos:Concept;
-  skos:broader zonmwpc:10145;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "pig"@en .
-
-zonmwpc:10255 a skos:Concept;
-  skos:broader zonmwpc:10145;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "broiler"@en .
-
-zonmwpc:10256 a skos:Concept;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:narrower zonmwpc:10257, zonmwpc:10258, zonmwpc:10259, zonmwpc:10260, zonmwpc:10261;
-  skos:prefLabel "animal group"@en;
-  skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
-
-zonmwpc:10257 a skos:Concept;
-  skos:broader zonmwpc:10256;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "insect"@en .
-
-zonmwpc:10258 a skos:Concept;
-  skos:broader zonmwpc:10256;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "livestock"@en .
-
-zonmwpc:10259 a skos:Concept;
-  skos:broader zonmwpc:10256;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "poultry"@en .
-
-zonmwpc:10260 a skos:Concept;
-  skos:broader zonmwpc:10256;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "wildlife"@en .
-
-zonmwpc:10261 a skos:Concept;
-  skos:broader zonmwpc:10256;
-  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
-  skos:prefLabel "companion animal"@en .
-
-zonmwpc:10262 a skos:Concept;
   skos:broader zonmwpc:10169;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "perineal swab"@en .
 
-zonmwpc:10263 a skos:Concept;
+zonmwpc:10246 a skos:Concept;
   skos:broader zonmwpc:10169;
   skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
   skos:prefLabel "cloacal swab"@en .
+
+zonmwpc:10247 a skos:Concept;
+  dct:source iop:variable;
+  skos:definition "A description of something observed or derived, minimally consisting of an ObjectOfInterest and its Property."@en;
+  skos:exactMatch iop:variable;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "variable"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
+
+zonmwpc:10248 a skos:Concept;
+  dct:source iop:property;
+  skos:definition "A type of a characteristic of the ObjectOfInterest."@en;
+  skos:exactMatch iop:property;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "property"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
+
+zonmwpc:10249 a skos:Concept;
+  dct:source iop:constraint;
+  skos:definition "A Constraint limits the scope of the observation and confines the context to a particular state. It describes properties of the involved entities that are relevant to the particular observation."@en;
+  skos:exactMatch iop:constraint;
+  skos:inScheme <http://vocab.fairdatacollective.org/zonmw/project-content/>;
+  skos:prefLabel "constraint"@en;
+  skos:topConceptOf <http://vocab.fairdatacollective.org/zonmw/project-content/> .
