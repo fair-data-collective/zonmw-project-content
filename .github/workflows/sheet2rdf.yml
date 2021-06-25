@@ -82,6 +82,8 @@ jobs:
         run: |
           rm qSKOS.jar
           rm xls2rdf.jar
+          sed -i -e 's/vocab.fairdatacollective.org/purl.org/g' $FILE_NAME.rdf
+          sed -i -e 's/project-content/covid19/g' $FILE_NAME.rdf          
           git add .
           git diff-index --quiet HEAD || git commit -m "new .ttl from Google sheet has been generated"
           git push
