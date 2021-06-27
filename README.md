@@ -13,7 +13,7 @@ Controlled vocabularies allow an accurate and controlled approach in describing 
 
 This repository hosts automatic workflow, executed by means of Github actions, and underlying shell and python scripts which:
 
-- [Fetches Google Sheet](https://docs.google.com/spreadsheets/d/1dvfNjJODfhb7vEW0bNmKCz7ae8dXGqOAxEjSita6cls/edit#gid=1404619820), containing the taxonomy terms and their defitions, from Google Drive and stores is at `xlsx` and `csv` files
+- [Fetches Google Sheet](https://docs.google.com/spreadsheets/d/1dvfNjJODfhb7vEW0bNmKCz7ae8dXGqOAxEjSita6cls/edit#gid=1404619820), containing the taxonomy terms and their defitions, from Google Drive and stores is as `xlsx` and `csv` files
 - Converts fetched sheet to machine-actionable and FAIR RDF vocabulary using [xls2rdf](https://github.com/sparna-git/xls2rdf)
 - Tests the resulting RDF vocabulary using [qSKOS](https://github.com/cmader/qSKOS/)
 - Commits conversion results and tests logs to this repository
