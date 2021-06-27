@@ -1,7 +1,7 @@
 [![CI](https://github.com/fair-data-collective/zonmw-project-content/workflows/Sheet2RDF/badge.svg)](https://github.com/fair-data-collective/zonmw-project-content/actions?query=workflow%3ASheet2RDF)
 
 # [ZonMw COVID19 Controlled Vocabulary](http://purl.org/zonmw/covid19)
-Controlled vocabularies allow an accurate and controlled approach in describing physical and digital assets (e.g., data). One of such controlled vocabulary is **ZonMw COVID19 Controlled Vocabulary**. This controlled vocabulary is a result of series of Metadata 4 Machine (M4M) Workshops that run from October 2020 to July 2021 under Dutch COVID19 program, which is funded by ZonMw. 
+Controlled vocabularies allow an accurate and controlled approach in describing physical and digital assets (e.g., data). One of such controlled vocabulary is **ZonMw COVID19 Controlled Vocabulary**. This controlled vocabulary is a result of series of [Metadata 4 Machine (M4M) Workshops](https://www.go-fair.org/zonmw-clusters-m4m-workshop-dates/) that run from October 2020 to July 2021 under Dutch COVID19 program, which is funded by ZonMw. 
 
 `sheet2rdf` and `OntoStack`, developed by FAIR Data Collective, are used to build and serve **ZonMw COVID19 Controlled Vocabulary**, while [PURL](https://archive.org/services/purl/) is used to persist identifiers for the vocabulary terms and properties:
 
