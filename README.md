@@ -1,4 +1,3 @@
-[![DOI](https://zenodo.org/badge/327900313.svg)](https://zenodo.org/badge/latestdoi/327900313)
 [![CI](https://github.com/fair-data-collective/zonmw-project-content/workflows/Sheet2RDF/badge.svg)](https://github.com/fair-data-collective/zonmw-project-content/actions?query=workflow%3ASheet2RDF)
 
 # [ZonMw COVID19 Controlled Vocabulary](http://purl.org/zonmw/covid19)
