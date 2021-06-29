@@ -26,7 +26,7 @@
   dct:rights <https://spdx.org/licenses/CC0-1.0>;
   dct:title "ZonMW Project Content Vocabulary"@en;
   pav:createdOn "2021-02-10T11:00:00+00:00"@en;
-  pav:lastUpdatedOn "2021-06-24T05:00:00+00:00"@en;
+  pav:lastUpdatedOn "2021-06-29T08:20:00+00:00"@en;
   pav:version "1.2.0"@en;
   skos:hasTopConcept covid19:10000, covid19:10001, covid19:10017, covid19:10037, covid19:10107,
     covid19:10144, covid19:10186, covid19:10213, covid19:10225, covid19:10230, covid19:10241,
