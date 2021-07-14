@@ -297,4 +297,5 @@ gen:10023,constraint,,,A Constraint limits the scope of the observation and conf
 covid19:10244,genomics data,sequencing data,,,,,gen:10005
 covid19:10245,perineal swab,,,,,,gen:10009
 covid19:10246,cloacal swab,,,,,,gen:10009
-gen.10024,microorganism,,,,,,gen:10008
+gen:10024,microorganism,,,,,,gen:10008
+gen:10025,animal,,,,,,gen:10008

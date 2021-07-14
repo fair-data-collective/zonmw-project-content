@@ -911,7 +911,7 @@ gen:10008 a skos:Concept;
   skos:definition "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs."@en;
   skos:exactMatch <http://purl.obolibrary.org/obo/OBI_0100026>;
   skos:inScheme <http://purl.org/zonmw/covid19/>;
-  skos:narrower covid19:10146;
+  skos:narrower covid19:10146, gen:10024, gen:10025;
   skos:prefLabel "organism"@en .
 
 covid19:10146 a skos:Concept;
@@ -1613,6 +1613,14 @@ covid19:10246 a skos:Concept;
   skos:inScheme <http://purl.org/zonmw/covid19/>;
   skos:prefLabel "cloacal swab"@en .
 
-gen:10025 skos:narrower covid19:10147, covid19:10148, covid19:10149 .
+gen:10024 a skos:Concept;
+  skos:broader gen:10008;
+  skos:inScheme <http://purl.org/zonmw/covid19/>;
+  skos:narrower covid19:10150, covid19:10151, covid19:10152;
+  skos:prefLabel "microorganism"@en .
 
-gen:10024 skos:narrower covid19:10150, covid19:10151, covid19:10152 .
+gen:10025 a skos:Concept;
+  skos:broader gen:10008;
+  skos:inScheme <http://purl.org/zonmw/covid19/>;
+  skos:narrower covid19:10147, covid19:10148, covid19:10149;
+  skos:prefLabel "animal"@en .
