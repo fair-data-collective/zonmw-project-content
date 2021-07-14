@@ -295,6 +295,6 @@ gen:10021,variable,,,"A description of something observed or derived, minimally 
 gen:10022,property,,,A type of a characteristic of the ObjectOfInterest.,,https://w3id.org/iadopt/ont/iadopt/property,,,https://w3id.org/iadopt/ont/iadopt/property
 gen:10023,constraint,,,A Constraint limits the scope of the observation and confines the context to a particular state. It describes properties of the involved entities that are relevant to the particular observation.,,https://w3id.org/iadopt/ont/iadopt/constraint,,,https://w3id.org/iadopt/ont/iadopt/constraint
 covid19:10244,genomics data,sequencing data,,,,,gen:10005
-covid19:10245,perineal swab,,,,,,gen:10007
-covid19:10246,cloacal swab,,,,,,gen:10007
+covid19:10245,perineal swab,,,,,,gen:10009
+covid19:10246,cloacal swab,,,,,,gen:10009
 gen.10024,microorganism,,,,,,gen:10008

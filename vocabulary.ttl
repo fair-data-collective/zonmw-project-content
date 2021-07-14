@@ -901,8 +901,7 @@ covid19:10143 a skos:Concept;
 
 gen:10007 a skos:Concept;
   skos:inScheme <http://purl.org/zonmw/covid19/>;
-  skos:narrower covid19:10245, covid19:10246, gen:10008, gen:10009, gen:10010, gen:10011,
-    gen:10012;
+  skos:narrower gen:10008, gen:10009, gen:10010, gen:10011, gen:10012;
   skos:prefLabel "biomaterial"@en;
   skos:topConceptOf <http://purl.org/zonmw/covid19/> .
 
@@ -1109,7 +1108,8 @@ gen:10009 a skos:Concept;
   skos:exactMatch <http://purl.bioontology.org/ontology/SNOMEDCT/123038009>, <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C19157>;
   skos:inScheme <http://purl.org/zonmw/covid19/>;
   skos:narrower covid19:10170, covid19:10171, covid19:10172, covid19:10173, covid19:10174,
-    covid19:10175, covid19:10176, covid19:10177, covid19:10178, covid19:10179;
+    covid19:10175, covid19:10176, covid19:10177, covid19:10178, covid19:10179, covid19:10245,
+    covid19:10246;
   skos:prefLabel "specimen"@en .
 
 covid19:10170 a skos:Concept;
@@ -1604,12 +1604,12 @@ covid19:10244 a skos:Concept;
   skos:prefLabel "genomics data"@en, "sequencing data"@nl .
 
 covid19:10245 a skos:Concept;
-  skos:broader gen:10007;
+  skos:broader gen:10009;
   skos:inScheme <http://purl.org/zonmw/covid19/>;
   skos:prefLabel "perineal swab"@en .
 
 covid19:10246 a skos:Concept;
-  skos:broader gen:10007;
+  skos:broader gen:10009;
   skos:inScheme <http://purl.org/zonmw/covid19/>;
   skos:prefLabel "cloacal swab"@en .
 
