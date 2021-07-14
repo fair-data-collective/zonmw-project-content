@@ -912,8 +912,7 @@ gen:10008 a skos:Concept;
   skos:definition "A material entity that is an individual living system, such as animal, plant, bacteria or virus, that is capable of replicating or reproducing, growth and maintenance in the right environment. An organism may be unicellular or made up, like humans, of many billions of cells divided into specialized tissues and organs."@en;
   skos:exactMatch <http://purl.obolibrary.org/obo/OBI_0100026>;
   skos:inScheme <http://purl.org/zonmw/covid19/>;
-  skos:narrower covid19:10146, covid19:10147, covid19:10148, covid19:10149, covid19:10150,
-    covid19:10151, covid19:10152;
+  skos:narrower covid19:10146;
   skos:prefLabel "organism"@en .
 
 covid19:10146 a skos:Concept;
@@ -926,7 +925,7 @@ covid19:10146 a skos:Concept;
 
 covid19:10147 a skos:Concept;
   dct:source <http://purl.bioontology.org/ontology/MESH/D008907>;
-  skos:broader gen:10008;
+  skos:broader gen:10025;
   skos:definition "Carnivores of genus Mustela of the family MUSTELIDAE. The European mink, which has white upper and lower lips, was widely trapped for commercial purposes and is classified as endangered. The American mink, lacking a white upper lip, is farmed commercially."@en;
   skos:exactMatch <http://purl.bioontology.org/ontology/MESH/D008907>;
   skos:inScheme <http://purl.org/zonmw/covid19/>;
@@ -934,7 +933,7 @@ covid19:10147 a skos:Concept;
 
 covid19:10148 a skos:Concept;
   dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C14238>;
-  skos:broader gen:10008;
+  skos:broader gen:10025;
   skos:definition "Any of numerous species of small rodents belonging to the genus Mus and various related genera of the family Muridae."@en;
   skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C14238>;
   skos:inScheme <http://purl.org/zonmw/covid19/>;
@@ -942,7 +941,7 @@ covid19:10148 a skos:Concept;
 
 covid19:10149 a skos:Concept;
   dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C160998>;
-  skos:broader gen:10008;
+  skos:broader gen:10025;
   skos:definition "Any of numerous species of rodents belonging to the genus Rattus and/or various related genera of the family Muridae."@en;
   skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C160998>;
   skos:inScheme <http://purl.org/zonmw/covid19/>;
@@ -950,7 +949,7 @@ covid19:10149 a skos:Concept;
 
 covid19:10150 a skos:Concept;
   dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C14283>;
-  skos:broader gen:10008;
+  skos:broader gen:10024;
   skos:definition "An infectious agent which consists of two parts, genetic material and a protein coat. These organisms lack independent metabolism, and they must infect the cells of other types of organisms to reproduce. Most viruses are capable of passing through fine filters that retain bacteria, and are not visible through a light microscope."@en;
   skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C14283>;
   skos:inScheme <http://purl.org/zonmw/covid19/>;
@@ -958,7 +957,7 @@ covid19:10150 a skos:Concept;
 
 covid19:10151 a skos:Concept;
   dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C14187>;
-  skos:broader gen:10008;
+  skos:broader gen:10024;
   skos:definition "Unicellular, prokaryotic organisms that reproduce by cell division and usually have cell walls; can be shaped like spheres, rods or spirals and can be found in virtually any environment."@en;
   skos:exactMatch <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C14187>;
   skos:inScheme <http://purl.org/zonmw/covid19/>;
@@ -966,7 +965,7 @@ covid19:10151 a skos:Concept;
 
 covid19:10152 a skos:Concept;
   dct:source <https://ncithesaurus.nci.nih.gov/ncitbrowser/ConceptReport.jsp?dictionary=NCI_Thesaurus&ns=ncit&code=C28176>;
-  skos:broader gen:10008;
+  skos:broader gen:10024;
   skos:definition "Any organism that has a close, symbiotic relationship with a separate, host organism."@en;
   skos:exactMatch <http://purl.obolibrary.org/obo/NCIT_C28176>;
   skos:inScheme <http://purl.org/zonmw/covid19/>;
@@ -1613,3 +1612,7 @@ covid19:10246 a skos:Concept;
   skos:broader gen:10007;
   skos:inScheme <http://purl.org/zonmw/covid19/>;
   skos:prefLabel "cloacal swab"@en .
+
+gen:10025 skos:narrower covid19:10147, covid19:10148, covid19:10149 .
+
+gen:10024 skos:narrower covid19:10150, covid19:10151, covid19:10152 .
